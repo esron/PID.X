@@ -37,16 +37,18 @@
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
 "83
 [v _displayDigit displayDigit `(v  1 e 1 0 ]
-"29 C:\Users\LARI_3\Documents\PID.X\main.c
-[v _UART_Init UART_Init `(uc  1 e 1 0 ]
-"45
-[v _UART_Write UART_Write `(v  1 e 1 0 ]
-"54
-[v _UART_Read UART_Read `(uc  1 e 1 0 ]
-"65
-[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
-"71
+"31 C:\Users\LARI_3\Documents\PID.X\main.c
+[v _PID_init PID_init `(v  1 e 1 0 ]
+"44
+[v _PID PID `(i  1 e 2 0 ]
+"57
 [v _main main `(v  1 e 1 0 ]
+"7 C:\Users\LARI_3\Documents\PID.X\uart.c
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+"24
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"36
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
 "350 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic16f917.h
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
 "457
@@ -85,8 +87,6 @@
 [v _PR2 PR2 `VEuc  1 e 1 @146 ]
 "2717
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
-"2724
-[v _CMCON0 CMCON0 `VEuc  1 e 1 @156 ]
 "2854
 [v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
 "2861
@@ -131,6 +131,8 @@
 [v _CREN CREN `VEb  1 e 0 @196 ]
 "6243
 [v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
+"6385
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
 "6399
 [v _RCIF RCIF `VEb  1 e 0 @101 ]
 "6417
@@ -153,34 +155,29 @@
 [v _TRMT TRMT `VEb  1 e 0 @1217 ]
 "7103
 [v _TXEN TXEN `VEb  1 e 0 @1221 ]
-"71 C:\Users\LARI_3\Documents\PID.X\main.c
+"28 C:\Users\LARI_3\Documents\PID.X\main.c
+[v _ki ki `f  1 e 3 0 ]
+[v _kd kd `f  1 e 3 0 ]
+[v _kp kp `f  1 e 3 0 ]
+"29
+[v _P P `i  1 e 2 0 ]
+[v _I I `i  1 e 2 0 ]
+[v _D D `i  1 e 2 0 ]
+"57
 [v _main main `(v  1 e 1 0 ]
 {
-[s S31 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-"72
-[v main@D3 D3 `S31  1 a 28 0 ]
-[v main@D2 D2 `S31  1 a 28 40 ]
-[v main@D1 D1 `S31  1 a 28 12 ]
-"77
-[v main@str str `[17]uc  1 a 17 47 ]
-"73
-[v main@kp kp `f  1 a 3 71 ]
-[v main@kd kd `f  1 a 3 68 ]
-[v main@ki ki `f  1 a 3 65 ]
-"76
-[v main@timer1 timer1 `ui  1 a 2 10 ]
-"74
-[v main@error error `i  1 a 2 8 ]
-[v main@I I `i  1 a 2 6 ]
-[v main@PID_v PID_v `i  1 a 2 4 ]
-[v main@D D `i  1 a 2 2 ]
-[v main@P P `i  1 a 2 0 ]
-[v main@desejado desejado `i  1 a 2 77 ]
-"75
-[v main@duty_cycle duty_cycle `uc  1 a 1 64 ]
-"76
-[v main@F2788 F2788 `[17]uc  1 s 17 F2788 ]
-"152
+"65
+[v main@str str `[33]uc  1 a 33 0 ]
+[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+"58
+[v main@D3 D3 `S19  1 a 28 28 ]
+[v main@D2 D2 `S19  1 a 28 0 ]
+[v main@D1 D1 `S19  1 a 28 33 ]
+"62
+[v main@timer1 timer1 `ui  1 a 2 60 ]
+"61
+[v main@setpoint setpoint `i  1 a 2 58 ]
+"120
 } 0
 "17 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
 [v _utoa utoa `(*.4uc  1 e 1 0 ]
@@ -224,18 +221,18 @@
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
 {
 [v displayNumber@num num `i  1 p 2 9 ]
-[s S31 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-[v displayNumber@D1 D1 `*.4S31  1 p 1 11 ]
-[v displayNumber@D2 D2 `*.4S31  1 p 1 12 ]
-[v displayNumber@D3 D3 `*.5S31  1 p 1 13 ]
+[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+[v displayNumber@D1 D1 `*.4S19  1 p 1 11 ]
+[v displayNumber@D2 D2 `*.5S19  1 p 1 12 ]
+[v displayNumber@D3 D3 `*.5S19  1 p 1 13 ]
 "80
 } 0
 "83
 [v _displayDigit displayDigit `(v  1 e 1 0 ]
 {
 [v displayDigit@digito digito `i  1 p 2 9 ]
-[s S31 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-[v displayDigit@D1 D1 `*.39S31  1 p 2 11 ]
+[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+[v displayDigit@D1 D1 `*.39S19  1 p 2 11 ]
 "185
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
@@ -261,6 +258,63 @@
 [v ___awdiv@divisor divisor `i  1 p 2 0 ]
 [v ___awdiv@dividend dividend `i  1 p 2 2 ]
 "42
+} 0
+"36 C:\Users\LARI_3\Documents\PID.X\uart.c
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+[v UART_Write_Text@text text `*.4uc  1 a 1 wreg ]
+"37
+[v UART_Write_Text@i i `i  1 a 2 2 ]
+"36
+[v UART_Write_Text@text text `*.4uc  1 a 1 wreg ]
+"38
+[v UART_Write_Text@text text `*.4uc  1 a 1 4 ]
+"40
+} 0
+"24
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 0 ]
+"27
+} 0
+"7
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+{
+"8
+[v UART_Init@x x `ui  1 a 2 9 ]
+"7
+[v UART_Init@baudrate baudrate `DCl  1 p 4 6 ]
+"21
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"6
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"42
+} 0
+"31 C:\Users\LARI_3\Documents\PID.X\main.c
+[v _PID_init PID_init `(v  1 e 1 0 ]
+{
+"42
+} 0
+"44
+[v _PID PID `(i  1 e 2 0 ]
+{
+"45
+[v PID@error error `i  1 a 2 52 ]
+"44
+[v PID@setpoint setpoint `i  1 p 2 43 ]
+[v PID@read read `i  1 p 2 45 ]
+"55
 } 0
 "44 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
@@ -317,59 +371,17 @@
 [v ___ftpack@sign sign `uc  1 p 1 4 ]
 "86
 } 0
-"65 C:\Users\LARI_3\Documents\PID.X\main.c
-[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
-{
-[v UART_Write_Text@text text `*.4uc  1 a 1 wreg ]
-"66
-[v UART_Write_Text@i i `i  1 a 2 2 ]
-"65
-[v UART_Write_Text@text text `*.4uc  1 a 1 wreg ]
-"67
-[v UART_Write_Text@text text `*.4uc  1 a 1 4 ]
-"69
-} 0
-"45
-[v _UART_Write UART_Write `(v  1 e 1 0 ]
-{
-[v UART_Write@data data `uc  1 a 1 wreg ]
-[v UART_Write@data data `uc  1 a 1 wreg ]
-[v UART_Write@data data `uc  1 a 1 0 ]
-"48
-} 0
-"29
-[v _UART_Init UART_Init `(uc  1 e 1 0 ]
-{
-"30
-[v UART_Init@x x `ui  1 a 2 9 ]
-"29
-[v UART_Init@baudrate baudrate `DCl  1 p 4 6 ]
-"43
-} 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-[v ___aldiv __aldiv `(l  1 e 4 0 ]
-{
-"11
-[v ___aldiv@quotient quotient `l  1 a 4 2 ]
-"12
-[v ___aldiv@sign sign `uc  1 a 1 1 ]
-[v ___aldiv@counter counter `uc  1 a 1 0 ]
-"6
-[v ___aldiv@divisor divisor `l  1 p 4 0 ]
-[v ___aldiv@dividend dividend `l  1 p 4 4 ]
-"42
-} 0
 "9 C:\Users\LARI_3\Documents\PID.X\lcd.c
 [v _LCD_mapping LCD_mapping `(v  1 e 1 0 ]
 {
-[s S31 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-[v LCD_mapping@D1 D1 `*.4S31  1 a 1 wreg ]
-[v LCD_mapping@D1 D1 `*.4S31  1 a 1 wreg ]
-[v LCD_mapping@D2 D2 `*.4S31  1 p 1 0 ]
-[v LCD_mapping@D3 D3 `*.5S31  1 p 1 1 ]
+[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+[v LCD_mapping@D1 D1 `*.4S19  1 a 1 wreg ]
+[v LCD_mapping@D1 D1 `*.4S19  1 a 1 wreg ]
+[v LCD_mapping@D2 D2 `*.5S19  1 p 1 0 ]
+[v LCD_mapping@D3 D3 `*.5S19  1 p 1 1 ]
 "11
 "9
-[v LCD_mapping@D1 D1 `*.4S31  1 a 1 4 ]
+[v LCD_mapping@D1 D1 `*.4S19  1 a 1 4 ]
 "36
 } 0
 "38

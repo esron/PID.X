@@ -6,7 +6,7 @@
 char UART_Init(const long int);
 void UART_Write(char);
 char UART_Read();
-void UART_Write_Text(char);
+void UART_Write_Text(char*);
 
 
 #endif	/* XC_HEADER_TEMPLATE_H */

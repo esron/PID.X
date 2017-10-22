@@ -1,78 +1,28 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[p mainexit ]
-"17 lcd.h
-[s S212 `*i 1 `*i 1 `*i 1 `*i 1 `*i 1 `*i 1 `*i 1 `i -> 7 `i ]
-[n S212 . sa sb sc sd se sf sg bits ]
-"32
-[v _LCD_init `(v ~T0 @X0 0 ef ]
-"31
-[v _LCD_mapping `(v ~T0 @X0 0 ef3`*S212`*S212`*S212 ]
-"6 uart.h
-[v _UART_Init `(uc ~T0 @X0 0 ef1`Cl ]
-"1549 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic16f917.h
-[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
-"1804
-[v _OSCCON `Vuc ~T0 @X0 0 e@143 ]
-"2041
-[v _PR2 `Vuc ~T0 @X0 0 e@146 ]
-"457
-[v _INTCON `Vuc ~T0 @X0 0 e@11 ]
-"1113
-[v _CCPR2L `Vuc ~T0 @X0 0 e@27 ]
-"1127
-[v _CCP2CON `Vuc ~T0 @X0 0 e@29 ]
-"770
-[v _T2CON `Vuc ~T0 @X0 0 e@18 ]
-"1487
-[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
-"6385
-[v _RC5 `Vb ~T0 @X0 0 e@61 ]
-"670
-[v _T1CON `Vuc ~T0 @X0 0 e@16 ]
-"6995
-[v _TMR1ON `Vb ~T0 @X0 0 e@128 ]
-"6987
-[v _TMR1CS `Vb ~T0 @X0 0 e@129 ]
-"6977
-[v _T1SYNC `Vb ~T0 @X0 0 e@130 ]
-"350
-[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
-"6417
-[v _RD7 `Vb ~T0 @X0 0 e@71 ]
-"663
-[v _TMR1H `Vuc ~T0 @X0 0 e@15 ]
-"656
-[v _TMR1L `Vuc ~T0 @X0 0 e@14 ]
-"34 lcd.h
-[v _displayNumber `(v ~T0 @X0 0 ef4`i`*S212`*S212`*S212 ]
-"96 C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdlib.h
-[v _utoa `(*uc ~T0 @X0 0 ef3`*uc`ui`i ]
-"9 uart.h
-[v _UART_Write_Text `(v ~T0 @X0 0 ef1`*uc ]
-"7
-[v _UART_Write `(v ~T0 @X0 0 ef1`uc ]
-[v F2605 `(v ~T0 @X0 1 tf1`ul ]
-"152 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic.h
-[v __delay `JF2605 ~T0 @X0 0 e ]
-[p i __delay ]
-"7 main.c
-[p x FOSC=INTOSCIO ]
-"8
-[p x WDTE=OFF ]
-"9
-[p x PWRTE=OFF ]
-"10
-[p x MCLRE=ON ]
-"11
-[p x CP=OFF ]
-"12
-[p x CPD=OFF ]
-"13
-[p x BOREN=ON ]
-"14
-[p x IESO=ON ]
-"15
-[p x FCMEN=ON ]
+"6083 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic16f917.h
+[v _BRGH `Vb ~T0 @X0 0 e@1218 ]
+"2717
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"6953
+[v _SYNC `Vb ~T0 @X0 0 e@1220 ]
+"6929
+[v _SPEN `Vb ~T0 @X0 0 e@199 ]
+"7057
+[v _TRISC7 `Vb ~T0 @X0 0 e@1087 ]
+"7055
+[v _TRISC6 `Vb ~T0 @X0 0 e@1086 ]
+"6155
+[v _CREN `Vb ~T0 @X0 0 e@196 ]
+"7103
+[v _TXEN `Vb ~T0 @X0 0 e@1221 ]
+"7083
+[v _TRMT `Vb ~T0 @X0 0 e@1217 ]
+"1092
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
+"6399
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"1099
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -2340,265 +2290,124 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 192: extern unsigned char __resetbits;
 [; ;pic.h: 193: extern __bit __powerdown;
 [; ;pic.h: 194: extern __bit __timeout;
-[; ;__size_t.h: 4: typedef unsigned size_t;
-[; ;stdlib.h: 7: typedef unsigned short wchar_t;
-[; ;stdlib.h: 15: typedef struct {
-[; ;stdlib.h: 16: int rem;
-[; ;stdlib.h: 17: int quot;
-[; ;stdlib.h: 18: } div_t;
-[; ;stdlib.h: 19: typedef struct {
-[; ;stdlib.h: 20: unsigned rem;
-[; ;stdlib.h: 21: unsigned quot;
-[; ;stdlib.h: 22: } udiv_t;
-[; ;stdlib.h: 23: typedef struct {
-[; ;stdlib.h: 24: long quot;
-[; ;stdlib.h: 25: long rem;
-[; ;stdlib.h: 26: } ldiv_t;
-[; ;stdlib.h: 27: typedef struct {
-[; ;stdlib.h: 28: unsigned long quot;
-[; ;stdlib.h: 29: unsigned long rem;
-[; ;stdlib.h: 30: } uldiv_t;
-[; ;stdlib.h: 53: extern double atof(const char *);
-[; ;stdlib.h: 54: extern double strtod(const char *, const char **);
-[; ;stdlib.h: 55: extern int atoi(const char *);
-[; ;stdlib.h: 56: extern unsigned xtoi(const char *);
-[; ;stdlib.h: 57: extern long atol(const char *);
-[; ;stdlib.h: 58: extern long strtol(const char *, char **, int);
-[; ;stdlib.h: 60: extern int rand(void);
-[; ;stdlib.h: 61: extern void srand(unsigned int);
-[; ;stdlib.h: 62: extern void * calloc(size_t, size_t);
-[; ;stdlib.h: 63: extern div_t div(int numer, int denom);
-[; ;stdlib.h: 64: extern udiv_t udiv(unsigned numer, unsigned denom);
-[; ;stdlib.h: 65: extern ldiv_t ldiv(long numer, long denom);
-[; ;stdlib.h: 66: extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
-[; ;stdlib.h: 67: extern unsigned long _lrotl(unsigned long value, unsigned int shift);
-[; ;stdlib.h: 68: extern unsigned long _lrotr(unsigned long value, unsigned int shift);
-[; ;stdlib.h: 69: extern unsigned int _rotl(unsigned int value, unsigned int shift);
-[; ;stdlib.h: 70: extern unsigned int _rotr(unsigned int value, unsigned int shift);
-[; ;stdlib.h: 75: extern void * malloc(size_t);
-[; ;stdlib.h: 76: extern void free(void *);
-[; ;stdlib.h: 77: extern void * realloc(void *, size_t);
-[; ;stdlib.h: 86: extern int atexit(void (*)(void));
-[; ;stdlib.h: 87: extern char * getenv(const char *);
-[; ;stdlib.h: 88: extern char ** environ;
-[; ;stdlib.h: 89: extern int system(char *);
-[; ;stdlib.h: 90: extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
-[; ;stdlib.h: 91: extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
-[; ;stdlib.h: 92: extern int abs(int);
-[; ;stdlib.h: 93: extern long labs(long);
-[; ;stdlib.h: 95: extern char * itoa(char * buf, int val, int base);
-[; ;stdlib.h: 96: extern char * utoa(char * buf, unsigned val, int base);
-[; ;stdlib.h: 101: extern char * ltoa(char * buf, long val, int base);
-[; ;stdlib.h: 102: extern char * ultoa(char * buf, unsigned long val, int base);
-[; ;stdlib.h: 104: extern char * ftoa(float f, int * status);
-[; ;lcd.h: 17: typedef struct{
-[; ;lcd.h: 18: int *sa;
-[; ;lcd.h: 19: int *sb;
-[; ;lcd.h: 20: int *sc;
-[; ;lcd.h: 21: int *sd;
-[; ;lcd.h: 22: int *se;
-[; ;lcd.h: 23: int *sf;
-[; ;lcd.h: 24: int *sg;
-[; ;lcd.h: 25: int bits[7];
-[; ;lcd.h: 26: }MAPKEY;
-[; ;lcd.h: 31: void LCD_mapping(MAPKEY* D1,MAPKEY* D2,MAPKEY* D3 );
-[; ;lcd.h: 32: void LCD_init();
-[; ;lcd.h: 33: void LCD_clear();
-[; ;lcd.h: 34: void displayNumber(int,MAPKEY*,MAPKEY*,MAPKEY*);
-[; ;lcd.h: 35: void displayDigit(int, MAPKEY*);
 [; ;uart.h: 6: char UART_Init(const long int);
 [; ;uart.h: 7: void UART_Write(char);
 [; ;uart.h: 8: char UART_Read();
 [; ;uart.h: 9: void UART_Write_Text(char*);
-"28 main.c
-[v _ki `f ~T0 @X0 1 e ]
-[v _kd `f ~T0 @X0 1 e ]
-[v _kp `f ~T0 @X0 1 e ]
-[; ;main.c: 28: float ki, kd, kp;
-"29
-[v _P `i ~T0 @X0 1 e ]
-[v _I `i ~T0 @X0 1 e ]
-[v _D `i ~T0 @X0 1 e ]
-[; ;main.c: 29: int P, I, D;
-"31
-[v _PID_init `(v ~T0 @X0 1 ef ]
+"7 uart.c
+[v _UART_Init `(uc ~T0 @X0 1 ef1`Cl ]
 {
-[; ;main.c: 31: void PID_init() {
-[e :U _PID_init ]
+[; ;uart.c: 7: char UART_Init(const long int baudrate) {
+[e :U _UART_Init ]
+[v _baudrate `Cl ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 34: P = 0;
-"34
-[e = _P -> 0 `i ]
-[; ;main.c: 35: I = 0;
-"35
-[e = _I -> 0 `i ]
-[; ;main.c: 36: D = 0;
-"36
-[e = _D -> 0 `i ]
-[; ;main.c: 39: kp = 0.001;
-"39
-[e = _kp -> .0.001 `f ]
-[; ;main.c: 40: ki = 1;
-"40
-[e = _ki -> -> 1 `i `f ]
-[; ;main.c: 41: kd = 1;
-"41
-[e = _kd -> -> 1 `i `f ]
-[; ;main.c: 42: }
-"42
+"8
+[v _x `ui ~T0 @X0 1 a ]
+[; ;uart.c: 8: unsigned int x;
+[; ;uart.c: 10: x = (8000000 - baudrate * 16) / (baudrate * 16);
+"10
+[e = _x -> / - -> 8000000 `l * _baudrate -> -> 16 `i `l * _baudrate -> -> 16 `i `l `ui ]
+[; ;uart.c: 11: BRGH = 1;
+"11
+[e = _BRGH -> -> 1 `i `b ]
+[; ;uart.c: 13: SPBRG = x;
+"13
+[e = _SPBRG -> _x `uc ]
+[; ;uart.c: 14: SYNC = 0;
+"14
+[e = _SYNC -> -> 0 `i `b ]
+[; ;uart.c: 15: SPEN = 1;
+"15
+[e = _SPEN -> -> 1 `i `b ]
+[; ;uart.c: 16: TRISC7 = 1;
+"16
+[e = _TRISC7 -> -> 1 `i `b ]
+[; ;uart.c: 17: TRISC6 = 1;
+"17
+[e = _TRISC6 -> -> 1 `i `b ]
+[; ;uart.c: 18: CREN = 1;
+"18
+[e = _CREN -> -> 1 `i `b ]
+[; ;uart.c: 19: TXEN = 1;
+"19
+[e = _TXEN -> -> 1 `i `b ]
+[; ;uart.c: 20: return 1;
+"20
+[e ) -> -> 1 `i `uc ]
+[e $UE 208  ]
+[; ;uart.c: 21: }
+"21
+[e :UE 208 ]
+}
+"24
+[v _UART_Write `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;uart.c: 24: void UART_Write(char data) {
+[e :U _UART_Write ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;uart.c: 25: while (!TRMT);
+"25
+[e $U 210  ]
+[e :U 211 ]
+[e :U 210 ]
+[e $ ! _TRMT 211  ]
+[e :U 212 ]
+[; ;uart.c: 26: TXREG = data;
+"26
+[e = _TXREG _data ]
+[; ;uart.c: 27: }
+"27
+[e :UE 209 ]
+}
+"30
+[v _UART_Read `(uc ~T0 @X0 1 ef ]
+{
+[; ;uart.c: 30: char UART_Read() {
+[e :U _UART_Read ]
+[f ]
+[; ;uart.c: 31: while (!RCIF);
+"31
+[e $U 214  ]
+[e :U 215 ]
+[e :U 214 ]
+[e $ ! _RCIF 215  ]
+[e :U 216 ]
+[; ;uart.c: 32: return RCREG;
+"32
+[e ) _RCREG ]
+[e $UE 213  ]
+[; ;uart.c: 33: }
+"33
 [e :UE 213 ]
 }
-"44
-[v _PID `(i ~T0 @X0 1 ef2`i`i ]
+"36
+[v _UART_Write_Text `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main.c: 44: int PID(int setpoint, int read) {
-[e :U _PID ]
-[v _setpoint `i ~T0 @X0 1 r1 ]
-[v _read `i ~T0 @X0 1 r2 ]
+[; ;uart.c: 36: void UART_Write_Text(char *text) {
+[e :U _UART_Write_Text ]
+[v _text `*uc ~T0 @X0 1 r1 ]
 [f ]
-"45
-[v _error `i ~T0 @X0 1 a ]
-[; ;main.c: 45: int error;
-[; ;main.c: 46: error = setpoint - read;
-"46
-[e = _error - _setpoint _read ]
-[; ;main.c: 48: if (error) {
-"48
-[e $ ! != _error -> 0 `i 215  ]
+"37
+[v _i `i ~T0 @X0 1 a ]
+[; ;uart.c: 37: int i;
+[; ;uart.c: 38: for (i = 0; text[i] != '\0'; i++)
+"38
 {
-[; ;main.c: 49: P = error;
-"49
-[e = _P _error ]
-[; ;main.c: 50: I = I + error;
-"50
-[e = _I + _I _error ]
-[; ;main.c: 51: D = 0;
-"51
-[e = _D -> 0 `i ]
-[; ;main.c: 53: return kp * P + ki * I + kd*D;
-"53
-[e ) -> + + * _kp -> _P `f * _ki -> _I `f * _kd -> _D `f `i ]
-[e $UE 214  ]
-"54
-}
-[e :U 215 ]
-[; ;main.c: 54: }
-[; ;main.c: 55: }
-"55
-[e :UE 214 ]
-}
-[v $root$_main `(v ~T0 @X0 0 e ]
-"57
-[v _main `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 57: void main(void) {
-[e :U _main ]
-[f ]
-"58
-[v _D1 `S212 ~T0 @X0 1 a ]
-[v _D2 `S212 ~T0 @X0 1 a ]
-[v _D3 `S212 ~T0 @X0 1 a ]
-"61
-[v _setpoint `i ~T0 @X0 1 a ]
-[; ;main.c: 58: MAPKEY D1, D2, D3;
-[; ;main.c: 61: int setpoint = 25;
-[e = _setpoint -> 25 `i ]
-"62
-[v _timer1 `ui ~T0 @X0 1 a ]
-"65
-[v _str `uc ~T0 @X0 -> 33 `i a ]
-[; ;main.c: 62: unsigned int timer1;
-[; ;main.c: 65: char str [33];
-[; ;main.c: 68: LCD_init();
-"68
-[e ( _LCD_init ..  ]
-[; ;main.c: 69: LCD_mapping(&D1,&D2,&D3);
-"69
-[e ( _LCD_mapping (3 , , &U _D1 &U _D2 &U _D3 ]
-[; ;main.c: 70: UART_Init(9600);
-"70
-[e ( _UART_Init (1 -> -> 9600 `i `l ]
-[; ;main.c: 71: PID_init();
-"71
-[e ( _PID_init ..  ]
-[; ;main.c: 74: TRISD = 0x00;
-"74
-[e = _TRISD -> -> 0 `i `uc ]
-[; ;main.c: 75: OSCCON = 0x70;
-"75
-[e = _OSCCON -> -> 112 `i `uc ]
-[; ;main.c: 76: PR2 = 0x3F;
-"76
-[e = _PR2 -> -> 63 `i `uc ]
-[; ;main.c: 77: INTCON = 0;
-"77
-[e = _INTCON -> -> 0 `i `uc ]
-[; ;main.c: 78: CCPR2L = 0;
-"78
-[e = _CCPR2L -> -> 0 `i `uc ]
-[; ;main.c: 79: CCP2CON = 0x0C;
-"79
-[e = _CCP2CON -> -> 12 `i `uc ]
-[; ;main.c: 80: T2CON = 0x04;
-"80
-[e = _T2CON -> -> 4 `i `uc ]
-[; ;main.c: 83: TRISC |= (1 << RC5);
-"83
-[e =| _TRISC -> << -> 1 `i -> _RC5 `i `uc ]
-[; ;main.c: 87: T1CON |= (1 << TMR1ON) | (1 << TMR1CS) | (1 << T1SYNC);
-"87
-[e =| _T1CON -> | | << -> 1 `i -> _TMR1ON `i << -> 1 `i -> _TMR1CS `i << -> 1 `i -> _T1SYNC `i `uc ]
-[; ;main.c: 89: PORTD |= (1 << RD7);
-"89
-[e =| _PORTD -> << -> 1 `i -> _RD7 `i `uc ]
-[; ;main.c: 91: TMR1H = 0;
-"91
-[e = _TMR1H -> -> 0 `i `uc ]
-[; ;main.c: 92: TMR1L = 0;
-"92
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;main.c: 94: while(1) {
-"94
+[e = _i -> 0 `i ]
+[e $U 221  ]
+"39
 [e :U 218 ]
-{
-[; ;main.c: 97: timer1 = (TMR1H << 8) + TMR1L;
-"97
-[e = _timer1 -> + << -> _TMR1H `i -> 8 `i -> _TMR1L `i `ui ]
-[; ;main.c: 100: displayNumber(timer1, &D1, &D2, &D3);
-"100
-[e ( _displayNumber (4 , , , -> _timer1 `i &U _D1 &U _D2 &U _D3 ]
-[; ;main.c: 103: CCPR2L = PID(setpoint, timer1);
-"103
-[e = _CCPR2L -> ( _PID (2 , _setpoint -> _timer1 `i `uc ]
-[; ;main.c: 106: utoa(str, timer1, 10);
-"106
-[e ( _utoa (3 , , &U _str _timer1 -> 10 `i ]
-[; ;main.c: 107: UART_Write_Text(str);
-"107
-[e ( _UART_Write_Text (1 &U _str ]
-[; ;main.c: 108: UART_Write('\n');
-"108
-[e ( _UART_Write (1 -> -> 10 `ui `uc ]
-[; ;main.c: 112: TMR1H = 0;
-"112
-[e = _TMR1H -> -> 0 `i `uc ]
-[; ;main.c: 113: TMR1L = 0;
-"113
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;main.c: 116: _delay((unsigned long)((600)*(8000000/4000.0)));
-"116
-[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"117
-}
-[e :U 217 ]
-"94
-[e $U 218  ]
+[; ;uart.c: 39: UART_Write(text[i]);
+[e ( _UART_Write (1 *U + _text * -> _i `x -> -> # *U _text `i `x ]
+"38
+[e ++ _i -> 1 `i ]
+[e :U 221 ]
+[e $ != -> *U + _text * -> _i `x -> -> # *U _text `i `x `ui -> 0 `ui 218  ]
 [e :U 219 ]
-[; ;main.c: 117: }
-[; ;main.c: 119: return;
-"119
-[e $UE 216  ]
-[; ;main.c: 120: }
-"120
-[e :UE 216 ]
+"39
+}
+[; ;uart.c: 40: }
+"40
+[e :UE 217 ]
 }
