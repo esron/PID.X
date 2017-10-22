@@ -1,0 +1,24 @@
+# XC8 files
+*.as
+*.lst
+*.obj
+*.rlf
+*.cmf
+*.cof
+*.d
+*.hxl
+*.mk
+*.properties
+*.bash
+*.xml
+*.p1
+*.pre
+*.sdb
+*.sym
+
+# Misc
+docs/
+/build/**
+/debug/**
+/dist/**
+/nbproject/**
