@@ -3256,7 +3256,8 @@ char UART_Read();
 void UART_Write_Text(char*);
 
 # 28 "main.c"
-float ki, kd, kp;
+float ki, kd, kp, pid_val;
+int last_error = 0;
 int P, I, D;
 
 void PID_init() {
@@ -3267,9 +3268,9 @@ I = 0;
 D = 0;
 
 
-kp = 0.001;
-ki = 1;
-kd = 1;
+kp = 1.5;
+ki = 0.5;
+kd = 0.1;
 }
 
 int PID(int setpoint, int read) {
@@ -3279,10 +3280,13 @@ error = setpoint - read;
 if (error) {
 P = error;
 I = I + error;
-D = 0;
-
-return kp * P + ki * I + kd*D;
+D = error - last_error;
+last_error = error;
+pid_val = kp * P + ki * I + kd * D;
+return CCPR2L += pid_val;
 }
+else
+return CCPR2L;
 }
 
 void main(void) {

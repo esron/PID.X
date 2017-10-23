@@ -25,7 +25,8 @@
 #include "uart.h"
 
 // Global PID variables
-float ki, kd, kp;
+float ki, kd, kp, pid_val;
+int last_error = 0;
 int P, I, D;
 
 void PID_init() {
@@ -36,9 +37,9 @@ void PID_init() {
     D = 0;
     
     // Empirical values for Kp, Ki & Kd;
-    kp = 0.001;
-    ki = 1;
-    kd = 1;
+    kp = 1.5;
+    ki = 0.5;
+    kd = 0.1;
 }
 
 int PID(int setpoint, int read) {
@@ -48,10 +49,13 @@ int PID(int setpoint, int read) {
     if (error) {
         P = error; // Proportional term
         I = I + error; // Integral term
-        D = 0; // Derivative term
-
-        return kp * P + ki * I + kd*D; // PID value
+        D = error - last_error; // Derivative term
+        last_error = error;
+        pid_val = kp * P + ki * I + kd * D;
+        return CCPR2L += pid_val; // PID value
     }
+    else
+        return CCPR2L;
 }
 
 void main(void) {

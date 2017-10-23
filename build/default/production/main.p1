@@ -1,4 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"1113 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic16f917.h
+[v _CCPR2L `Vuc ~T0 @X0 0 e@27 ]
 [p mainexit ]
 "17 lcd.h
 [s S212 `*i 1 `*i 1 `*i 1 `*i 1 `*i 1 `*i 1 `*i 1 `i -> 7 `i ]
@@ -17,8 +19,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PR2 `Vuc ~T0 @X0 0 e@146 ]
 "457
 [v _INTCON `Vuc ~T0 @X0 0 e@11 ]
-"1113
-[v _CCPR2L `Vuc ~T0 @X0 0 e@27 ]
 "1127
 [v _CCP2CON `Vuc ~T0 @X0 0 e@29 ]
 "770
@@ -2414,191 +2414,212 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ki `f ~T0 @X0 1 e ]
 [v _kd `f ~T0 @X0 1 e ]
 [v _kp `f ~T0 @X0 1 e ]
-[; ;main.c: 28: float ki, kd, kp;
+[v _pid_val `f ~T0 @X0 1 e ]
+[; ;main.c: 28: float ki, kd, kp, pid_val;
 "29
+[v _last_error `i ~T0 @X0 1 e ]
+[i _last_error
+-> 0 `i
+]
+[; ;main.c: 29: int last_error = 0;
+"30
 [v _P `i ~T0 @X0 1 e ]
 [v _I `i ~T0 @X0 1 e ]
 [v _D `i ~T0 @X0 1 e ]
-[; ;main.c: 29: int P, I, D;
-"31
+[; ;main.c: 30: int P, I, D;
+"32
 [v _PID_init `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 31: void PID_init() {
+[; ;main.c: 32: void PID_init() {
 [e :U _PID_init ]
 [f ]
-[; ;main.c: 34: P = 0;
-"34
-[e = _P -> 0 `i ]
-[; ;main.c: 35: I = 0;
+[; ;main.c: 35: P = 0;
 "35
-[e = _I -> 0 `i ]
-[; ;main.c: 36: D = 0;
+[e = _P -> 0 `i ]
+[; ;main.c: 36: I = 0;
 "36
+[e = _I -> 0 `i ]
+[; ;main.c: 37: D = 0;
+"37
 [e = _D -> 0 `i ]
-[; ;main.c: 39: kp = 0.001;
-"39
-[e = _kp -> .0.001 `f ]
-[; ;main.c: 40: ki = 1;
+[; ;main.c: 40: kp = 1.5;
 "40
-[e = _ki -> -> 1 `i `f ]
-[; ;main.c: 41: kd = 1;
+[e = _kp -> .1.5 `f ]
+[; ;main.c: 41: ki = 0.5;
 "41
-[e = _kd -> -> 1 `i `f ]
-[; ;main.c: 42: }
+[e = _ki -> .0.5 `f ]
+[; ;main.c: 42: kd = 0.1;
 "42
+[e = _kd -> .0.1 `f ]
+[; ;main.c: 43: }
+"43
 [e :UE 213 ]
 }
-"44
+"45
 [v _PID `(i ~T0 @X0 1 ef2`i`i ]
 {
-[; ;main.c: 44: int PID(int setpoint, int read) {
+[; ;main.c: 45: int PID(int setpoint, int read) {
 [e :U _PID ]
 [v _setpoint `i ~T0 @X0 1 r1 ]
 [v _read `i ~T0 @X0 1 r2 ]
 [f ]
-"45
-[v _error `i ~T0 @X0 1 a ]
-[; ;main.c: 45: int error;
-[; ;main.c: 46: error = setpoint - read;
 "46
+[v _error `i ~T0 @X0 1 a ]
+[; ;main.c: 46: int error;
+[; ;main.c: 47: error = setpoint - read;
+"47
 [e = _error - _setpoint _read ]
-[; ;main.c: 48: if (error) {
-"48
+[; ;main.c: 49: if (error) {
+"49
 [e $ ! != _error -> 0 `i 215  ]
 {
-[; ;main.c: 49: P = error;
-"49
-[e = _P _error ]
-[; ;main.c: 50: I = I + error;
+[; ;main.c: 50: P = error;
 "50
-[e = _I + _I _error ]
-[; ;main.c: 51: D = 0;
+[e = _P _error ]
+[; ;main.c: 51: I = I + error;
 "51
-[e = _D -> 0 `i ]
-[; ;main.c: 53: return kp * P + ki * I + kd*D;
+[e = _I + _I _error ]
+[; ;main.c: 52: D = error - last_error;
+"52
+[e = _D - _error _last_error ]
+[; ;main.c: 53: last_error = error;
 "53
-[e ) -> + + * _kp -> _P `f * _ki -> _I `f * _kd -> _D `f `i ]
-[e $UE 214  ]
+[e = _last_error _error ]
+[; ;main.c: 54: pid_val = kp * P + ki * I + kd * D;
 "54
-}
-[e :U 215 ]
-[; ;main.c: 54: }
-[; ;main.c: 55: }
+[e = _pid_val + + * _kp -> _P `f * _ki -> _I `f * _kd -> _D `f ]
+[; ;main.c: 55: return CCPR2L += pid_val;
 "55
+[e ) -> =+ _CCPR2L _pid_val `i ]
+[e $UE 214  ]
+"56
+}
+[; ;main.c: 56: }
+[e $U 216  ]
+"57
+[e :U 215 ]
+[; ;main.c: 57: else
+[; ;main.c: 58: return CCPR2L;
+"58
+[e ) -> _CCPR2L `i ]
+[e $UE 214  ]
+[e :U 216 ]
+[; ;main.c: 59: }
+"59
 [e :UE 214 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"57
+"61
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 57: void main(void) {
+[; ;main.c: 61: void main(void) {
 [e :U _main ]
 [f ]
-"58
+"62
 [v _D1 `S212 ~T0 @X0 1 a ]
 [v _D2 `S212 ~T0 @X0 1 a ]
 [v _D3 `S212 ~T0 @X0 1 a ]
-"61
-[v _setpoint `i ~T0 @X0 1 a ]
-[; ;main.c: 58: MAPKEY D1, D2, D3;
-[; ;main.c: 61: int setpoint = 25;
-[e = _setpoint -> 25 `i ]
-"62
-[v _timer1 `ui ~T0 @X0 1 a ]
 "65
-[v _str `uc ~T0 @X0 -> 33 `i a ]
-[; ;main.c: 62: unsigned int timer1;
-[; ;main.c: 65: char str [33];
-[; ;main.c: 68: LCD_init();
-"68
-[e ( _LCD_init ..  ]
-[; ;main.c: 69: LCD_mapping(&D1,&D2,&D3);
+[v _setpoint `i ~T0 @X0 1 a ]
+[; ;main.c: 62: MAPKEY D1, D2, D3;
+[; ;main.c: 65: int setpoint = 25;
+[e = _setpoint -> 25 `i ]
+"66
+[v _timer1 `ui ~T0 @X0 1 a ]
 "69
+[v _str `uc ~T0 @X0 -> 33 `i a ]
+[; ;main.c: 66: unsigned int timer1;
+[; ;main.c: 69: char str [33];
+[; ;main.c: 72: LCD_init();
+"72
+[e ( _LCD_init ..  ]
+[; ;main.c: 73: LCD_mapping(&D1,&D2,&D3);
+"73
 [e ( _LCD_mapping (3 , , &U _D1 &U _D2 &U _D3 ]
-[; ;main.c: 70: UART_Init(9600);
-"70
-[e ( _UART_Init (1 -> -> 9600 `i `l ]
-[; ;main.c: 71: PID_init();
-"71
-[e ( _PID_init ..  ]
-[; ;main.c: 74: TRISD = 0x00;
+[; ;main.c: 74: UART_Init(9600);
 "74
-[e = _TRISD -> -> 0 `i `uc ]
-[; ;main.c: 75: OSCCON = 0x70;
+[e ( _UART_Init (1 -> -> 9600 `i `l ]
+[; ;main.c: 75: PID_init();
 "75
-[e = _OSCCON -> -> 112 `i `uc ]
-[; ;main.c: 76: PR2 = 0x3F;
-"76
-[e = _PR2 -> -> 63 `i `uc ]
-[; ;main.c: 77: INTCON = 0;
-"77
-[e = _INTCON -> -> 0 `i `uc ]
-[; ;main.c: 78: CCPR2L = 0;
+[e ( _PID_init ..  ]
+[; ;main.c: 78: TRISD = 0x00;
 "78
-[e = _CCPR2L -> -> 0 `i `uc ]
-[; ;main.c: 79: CCP2CON = 0x0C;
+[e = _TRISD -> -> 0 `i `uc ]
+[; ;main.c: 79: OSCCON = 0x70;
 "79
-[e = _CCP2CON -> -> 12 `i `uc ]
-[; ;main.c: 80: T2CON = 0x04;
+[e = _OSCCON -> -> 112 `i `uc ]
+[; ;main.c: 80: PR2 = 0x3F;
 "80
-[e = _T2CON -> -> 4 `i `uc ]
-[; ;main.c: 83: TRISC |= (1 << RC5);
+[e = _PR2 -> -> 63 `i `uc ]
+[; ;main.c: 81: INTCON = 0;
+"81
+[e = _INTCON -> -> 0 `i `uc ]
+[; ;main.c: 82: CCPR2L = 0;
+"82
+[e = _CCPR2L -> -> 0 `i `uc ]
+[; ;main.c: 83: CCP2CON = 0x0C;
 "83
-[e =| _TRISC -> << -> 1 `i -> _RC5 `i `uc ]
-[; ;main.c: 87: T1CON |= (1 << TMR1ON) | (1 << TMR1CS) | (1 << T1SYNC);
+[e = _CCP2CON -> -> 12 `i `uc ]
+[; ;main.c: 84: T2CON = 0x04;
+"84
+[e = _T2CON -> -> 4 `i `uc ]
+[; ;main.c: 87: TRISC |= (1 << RC5);
 "87
-[e =| _T1CON -> | | << -> 1 `i -> _TMR1ON `i << -> 1 `i -> _TMR1CS `i << -> 1 `i -> _T1SYNC `i `uc ]
-[; ;main.c: 89: PORTD |= (1 << RD7);
-"89
-[e =| _PORTD -> << -> 1 `i -> _RD7 `i `uc ]
-[; ;main.c: 91: TMR1H = 0;
+[e =| _TRISC -> << -> 1 `i -> _RC5 `i `uc ]
+[; ;main.c: 91: T1CON |= (1 << TMR1ON) | (1 << TMR1CS) | (1 << T1SYNC);
 "91
+[e =| _T1CON -> | | << -> 1 `i -> _TMR1ON `i << -> 1 `i -> _TMR1CS `i << -> 1 `i -> _T1SYNC `i `uc ]
+[; ;main.c: 93: PORTD |= (1 << RD7);
+"93
+[e =| _PORTD -> << -> 1 `i -> _RD7 `i `uc ]
+[; ;main.c: 95: TMR1H = 0;
+"95
 [e = _TMR1H -> -> 0 `i `uc ]
-[; ;main.c: 92: TMR1L = 0;
-"92
+[; ;main.c: 96: TMR1L = 0;
+"96
 [e = _TMR1L -> -> 0 `i `uc ]
-[; ;main.c: 94: while(1) {
-"94
-[e :U 218 ]
-{
-[; ;main.c: 97: timer1 = (TMR1H << 8) + TMR1L;
-"97
-[e = _timer1 -> + << -> _TMR1H `i -> 8 `i -> _TMR1L `i `ui ]
-[; ;main.c: 100: displayNumber(timer1, &D1, &D2, &D3);
-"100
-[e ( _displayNumber (4 , , , -> _timer1 `i &U _D1 &U _D2 &U _D3 ]
-[; ;main.c: 103: CCPR2L = PID(setpoint, timer1);
-"103
-[e = _CCPR2L -> ( _PID (2 , _setpoint -> _timer1 `i `uc ]
-[; ;main.c: 106: utoa(str, timer1, 10);
-"106
-[e ( _utoa (3 , , &U _str _timer1 -> 10 `i ]
-[; ;main.c: 107: UART_Write_Text(str);
-"107
-[e ( _UART_Write_Text (1 &U _str ]
-[; ;main.c: 108: UART_Write('\n');
-"108
-[e ( _UART_Write (1 -> -> 10 `ui `uc ]
-[; ;main.c: 112: TMR1H = 0;
-"112
-[e = _TMR1H -> -> 0 `i `uc ]
-[; ;main.c: 113: TMR1L = 0;
-"113
-[e = _TMR1L -> -> 0 `i `uc ]
-[; ;main.c: 116: _delay((unsigned long)((600)*(8000000/4000.0)));
-"116
-[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"117
-}
-[e :U 217 ]
-"94
-[e $U 218  ]
+[; ;main.c: 98: while(1) {
+"98
 [e :U 219 ]
-[; ;main.c: 117: }
-[; ;main.c: 119: return;
-"119
-[e $UE 216  ]
-[; ;main.c: 120: }
+{
+[; ;main.c: 101: timer1 = (TMR1H << 8) + TMR1L;
+"101
+[e = _timer1 -> + << -> _TMR1H `i -> 8 `i -> _TMR1L `i `ui ]
+[; ;main.c: 104: displayNumber(timer1, &D1, &D2, &D3);
+"104
+[e ( _displayNumber (4 , , , -> _timer1 `i &U _D1 &U _D2 &U _D3 ]
+[; ;main.c: 107: CCPR2L = PID(setpoint, timer1);
+"107
+[e = _CCPR2L -> ( _PID (2 , _setpoint -> _timer1 `i `uc ]
+[; ;main.c: 110: utoa(str, timer1, 10);
+"110
+[e ( _utoa (3 , , &U _str _timer1 -> 10 `i ]
+[; ;main.c: 111: UART_Write_Text(str);
+"111
+[e ( _UART_Write_Text (1 &U _str ]
+[; ;main.c: 112: UART_Write('\n');
+"112
+[e ( _UART_Write (1 -> -> 10 `ui `uc ]
+[; ;main.c: 116: TMR1H = 0;
+"116
+[e = _TMR1H -> -> 0 `i `uc ]
+[; ;main.c: 117: TMR1L = 0;
+"117
+[e = _TMR1L -> -> 0 `i `uc ]
+[; ;main.c: 120: _delay((unsigned long)((600)*(8000000/4000.0)));
 "120
-[e :UE 216 ]
+[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"121
+}
+[e :U 218 ]
+"98
+[e $U 219  ]
+[e :U 220 ]
+[; ;main.c: 121: }
+[; ;main.c: 123: return;
+"123
+[e $UE 217  ]
+[; ;main.c: 124: }
+"124
+[e :UE 217 ]
 }

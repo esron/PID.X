@@ -11,87 +11,85 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
+$C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production\PID.X.production.obj
-cinit CODE 0 7F4 7F4 C 2
-text1 CODE 0 105B 105B 6C 2
-text2 CODE 0 7 7 32 2
-text3 CODE 0 1F0D 1F0D 3C 2
-text4 CODE 0 810 810 75 2
-text5 CODE 0 885 885 112 2
-text6 CODE 0 1F49 1F49 4B 2
-text7 CODE 0 1002 1002 59 2
-text8 CODE 0 1ECD 1ECD 1F 2
-text9 CODE 0 806 806 A 2
-text10 CODE 0 10C7 10C7 74 2
-text11 CODE 0 12E1 12E1 8F 2
-text12 CODE 0 1EB2 1EB2 1B 2
-text13 CODE 0 1370 1370 B9 2
-text14 CODE 0 1253 1253 8E 2
-text15 CODE 0 1429 1429 D3 2
-text16 CODE 0 15E6 15E6 109 2
-text17 CODE 0 1EEC 1EEC 21 2
-text18 CODE 0 1F94 1F94 6C 2
+cinit CODE 0 7EF 7EF 11 2
+text1 CODE 0 1F20 1F20 6C 2
+text2 CODE 0 1E46 1E46 32 2
+text3 CODE 0 1E78 1E78 3C 2
+text4 CODE 0 1059 1059 75 2
+text5 CODE 0 16EE 16EE 112 2
+text6 CODE 0 100E 100E 4B 2
+text7 CODE 0 80B 80B 59 2
+text8 CODE 0 1E27 1E27 1F 2
+text9 CODE 0 9 9 A 2
+text10 CODE 0 1F8C 1F8C 74 2
+text11 CODE 0 1272 1272 8F 2
+text12 CODE 0 1E0C 1E0C 1B 2
+text13 CODE 0 BDD BDD 133 2
+text14 CODE 0 1159 1159 8C 2
+text15 CODE 0 1301 1301 D3 2
+text16 CODE 0 14D4 14D4 109 2
+text17 CODE 0 13 13 21 2
+text18 CODE 0 1EB4 1EB4 6C 2
 text19 CODE 0 E46 E46 1BA 2
-text20 CODE 0 1E99 1E99 19 2
-nvBANK0 BANK0 1 5E 5E 9 1
-maintext CODE 0 14FC 14FC EA 2
+text20 CODE 0 1DF3 1DF3 19 2
+nvBANK1 BANK1 1 E5 E5 9 1
+maintext CODE 0 13D4 13D4 100 2
 cstackCOMMON COMMON 1 70 70 E 1
-cstackBANK0 BANK0 1 20 20 3E 1
-cstackBANK1 BANK1 1 A0 A0 3D 1
-cstackBANK3 BANK3 1 190 190 38 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 A0 A0 3A 1
+cstackBANK3 BANK3 1 190 190 1C 1
 text5_split_1 CODE 0 D10 D10 136 2
-text5_split_2 CODE 0 11C6 11C6 8D 2
-text5_split_3 CODE 0 16EF 16EF 111 2
-text5_split_4 CODE 0 BDE BDE 132 2
-text5_split_5 CODE 0 113B 113B 8B 2
-text5_split_6 CODE 0 997 997 115 2
-text5_split_7 CODE 0 AAC AAC 132 2
-text5_split_8 CODE 0 39 39 7BB 2
-bssBANK0 BANK0 1 67 67 6 1
+text5_split_2 CODE 0 11E5 11E5 8D 2
+text5_split_3 CODE 0 15DD 15DD 111 2
+text5_split_4 CODE 0 AAB AAB 132 2
+text5_split_5 CODE 0 10CE 10CE 8B 2
+text5_split_6 CODE 0 864 864 115 2
+text5_split_7 CODE 0 979 979 132 2
+text5_split_8 CODE 0 34 34 7BB 2
+bssBANK1 BANK1 1 DA DA B 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 6D-6F 1
-RAM DD-EF 1
+RAM EE-EF 1
 RAM 120-16F 1
-RAM 1C8-1EF 1
-BANK0 6D-6F 1
-BANK1 DD-EF 1
+RAM 1AC-1EF 1
+BANK1 EE-EF 1
 BANK2 120-16F 1
-BANK3 1C8-1EF 1
-CONST 3-6 2
-CONST 800-805 2
-CONST 1000-1001 2
-CONST 1800-1E98 2
-ENTRY 3-6 2
-ENTRY 800-805 2
-ENTRY 1000-1001 2
-ENTRY 1800-1E98 2
+BANK3 1AC-1EF 1
+CONST 3-8 2
+CONST 800-80A 2
+CONST 1000-100D 2
+CONST 1800-1DF2 2
+ENTRY 3-8 2
+ENTRY 800-80A 2
+ENTRY 1000-100D 2
+ENTRY 1800-1DF2 2
 IDLOC 2000-2003 2
 STACK 120-16F 1
-CODE 3-6 2
-CODE 800-805 2
-CODE 1000-1001 2
-CODE 1800-1E98 2
+CODE 3-8 2
+CODE 800-80A 2
+CODE 1000-100D 2
+CODE 1800-1DF2 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
-STRCODE 3-6 2
-STRCODE 800-805 2
-STRCODE 1000-1001 2
-STRCODE 1800-1E98 2
-STRING 3-6 2
-STRING 800-805 2
-STRING 1000-1001 2
-STRING 1800-1E98 2
+STRCODE 3-8 2
+STRCODE 800-80A 2
+STRCODE 1000-100D 2
+STRCODE 1800-1DF2 2
+STRING 3-8 2
+STRING 800-80A 2
+STRING 1000-100D 2
+STRING 1800-1DF2 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -106,96 +104,101 @@ STRING 1800-1E98 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\PID.X.production.obj
-7F4 cinit CODE >900:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F4 cinit CODE >903:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F4 cinit CODE >920:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F5 cinit CODE >921:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F6 cinit CODE >922:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F7 cinit CODE >923:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F8 cinit CODE >924:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7F9 cinit CODE >925:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7FA cinit CODE >926:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7FB cinit CODE >927:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7FC cinit CODE >933:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7FC cinit CODE >935:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-7FD cinit CODE >936:C:\Users\LARI_3\AppData\Local\Temp\sa8s.
-5B text5_split_8 CODE >136:C:\Users\LARI_3\Documents\PID.X\lcd.c
-8E text5_split_8 CODE >137:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C1 text5_split_8 CODE >138:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C2 text5_split_8 CODE >140:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F0 text5_split_8 CODE >141:C:\Users\LARI_3\Documents\PID.X\lcd.c
-125 text5_split_8 CODE >142:C:\Users\LARI_3\Documents\PID.X\lcd.c
-158 text5_split_8 CODE >143:C:\Users\LARI_3\Documents\PID.X\lcd.c
-18B text5_split_8 CODE >144:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1BE text5_split_8 CODE >145:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1F1 text5_split_8 CODE >146:C:\Users\LARI_3\Documents\PID.X\lcd.c
-224 text5_split_8 CODE >147:C:\Users\LARI_3\Documents\PID.X\lcd.c
-225 text5_split_8 CODE >149:C:\Users\LARI_3\Documents\PID.X\lcd.c
-253 text5_split_8 CODE >150:C:\Users\LARI_3\Documents\PID.X\lcd.c
-286 text5_split_8 CODE >151:C:\Users\LARI_3\Documents\PID.X\lcd.c
-2B9 text5_split_8 CODE >152:C:\Users\LARI_3\Documents\PID.X\lcd.c
-2EE text5_split_8 CODE >153:C:\Users\LARI_3\Documents\PID.X\lcd.c
-323 text5_split_8 CODE >154:C:\Users\LARI_3\Documents\PID.X\lcd.c
-358 text5_split_8 CODE >155:C:\Users\LARI_3\Documents\PID.X\lcd.c
-38D text5_split_8 CODE >156:C:\Users\LARI_3\Documents\PID.X\lcd.c
-38E text5_split_8 CODE >158:C:\Users\LARI_3\Documents\PID.X\lcd.c
-3BC text5_split_8 CODE >159:C:\Users\LARI_3\Documents\PID.X\lcd.c
-3EF text5_split_8 CODE >160:C:\Users\LARI_3\Documents\PID.X\lcd.c
-422 text5_split_8 CODE >161:C:\Users\LARI_3\Documents\PID.X\lcd.c
-455 text5_split_8 CODE >162:C:\Users\LARI_3\Documents\PID.X\lcd.c
-488 text5_split_8 CODE >163:C:\Users\LARI_3\Documents\PID.X\lcd.c
-4BB text5_split_8 CODE >164:C:\Users\LARI_3\Documents\PID.X\lcd.c
-4EE text5_split_8 CODE >165:C:\Users\LARI_3\Documents\PID.X\lcd.c
-4EF text5_split_8 CODE >167:C:\Users\LARI_3\Documents\PID.X\lcd.c
-51D text5_split_8 CODE >168:C:\Users\LARI_3\Documents\PID.X\lcd.c
-550 text5_split_8 CODE >169:C:\Users\LARI_3\Documents\PID.X\lcd.c
-583 text5_split_8 CODE >170:C:\Users\LARI_3\Documents\PID.X\lcd.c
-5B6 text5_split_8 CODE >171:C:\Users\LARI_3\Documents\PID.X\lcd.c
-5EB text5_split_8 CODE >172:C:\Users\LARI_3\Documents\PID.X\lcd.c
-61E text5_split_8 CODE >173:C:\Users\LARI_3\Documents\PID.X\lcd.c
-651 text5_split_8 CODE >174:C:\Users\LARI_3\Documents\PID.X\lcd.c
-652 text5_split_8 CODE >176:C:\Users\LARI_3\Documents\PID.X\lcd.c
-680 text5_split_8 CODE >177:C:\Users\LARI_3\Documents\PID.X\lcd.c
-6B5 text5_split_8 CODE >178:C:\Users\LARI_3\Documents\PID.X\lcd.c
-6EA text5_split_8 CODE >179:C:\Users\LARI_3\Documents\PID.X\lcd.c
-71D text5_split_8 CODE >180:C:\Users\LARI_3\Documents\PID.X\lcd.c
-750 text5_split_8 CODE >181:C:\Users\LARI_3\Documents\PID.X\lcd.c
-783 text5_split_8 CODE >182:C:\Users\LARI_3\Documents\PID.X\lcd.c
-7B8 text5_split_8 CODE >184:C:\Users\LARI_3\Documents\PID.X\lcd.c
-7B9 text5_split_8 CODE >84:C:\Users\LARI_3\Documents\PID.X\lcd.c
-7E1 text5_split_8 CODE >185:C:\Users\LARI_3\Documents\PID.X\lcd.c
-ACC text5_split_7 CODE >128:C:\Users\LARI_3\Documents\PID.X\lcd.c
-AFF text5_split_7 CODE >129:C:\Users\LARI_3\Documents\PID.X\lcd.c
-B00 text5_split_7 CODE >131:C:\Users\LARI_3\Documents\PID.X\lcd.c
-B2E text5_split_7 CODE >132:C:\Users\LARI_3\Documents\PID.X\lcd.c
-B63 text5_split_7 CODE >133:C:\Users\LARI_3\Documents\PID.X\lcd.c
-B96 text5_split_7 CODE >134:C:\Users\LARI_3\Documents\PID.X\lcd.c
-BC9 text5_split_7 CODE >135:C:\Users\LARI_3\Documents\PID.X\lcd.c
-997 text5_split_6 CODE >122:C:\Users\LARI_3\Documents\PID.X\lcd.c
-9C7 text5_split_6 CODE >123:C:\Users\LARI_3\Documents\PID.X\lcd.c
-9FA text5_split_6 CODE >124:C:\Users\LARI_3\Documents\PID.X\lcd.c
-A2D text5_split_6 CODE >125:C:\Users\LARI_3\Documents\PID.X\lcd.c
-A62 text5_split_6 CODE >126:C:\Users\LARI_3\Documents\PID.X\lcd.c
-A97 text5_split_6 CODE >127:C:\Users\LARI_3\Documents\PID.X\lcd.c
-115D text5_split_5 CODE >118:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1192 text5_split_5 CODE >119:C:\Users\LARI_3\Documents\PID.X\lcd.c
-11C5 text5_split_5 CODE >120:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C00 text5_split_4 CODE >110:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C33 text5_split_4 CODE >111:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C34 text5_split_4 CODE >113:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C62 text5_split_4 CODE >114:C:\Users\LARI_3\Documents\PID.X\lcd.c
-C95 text5_split_4 CODE >115:C:\Users\LARI_3\Documents\PID.X\lcd.c
-CC8 text5_split_4 CODE >116:C:\Users\LARI_3\Documents\PID.X\lcd.c
-CFB text5_split_4 CODE >117:C:\Users\LARI_3\Documents\PID.X\lcd.c
-16EF text5_split_3 CODE >104:C:\Users\LARI_3\Documents\PID.X\lcd.c
-171D text5_split_3 CODE >105:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1750 text5_split_3 CODE >106:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1785 text5_split_3 CODE >107:C:\Users\LARI_3\Documents\PID.X\lcd.c
-17B8 text5_split_3 CODE >108:C:\Users\LARI_3\Documents\PID.X\lcd.c
-17EB text5_split_3 CODE >109:C:\Users\LARI_3\Documents\PID.X\lcd.c
-11E8 text5_split_2 CODE >100:C:\Users\LARI_3\Documents\PID.X\lcd.c
-121D text5_split_2 CODE >101:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1252 text5_split_2 CODE >102:C:\Users\LARI_3\Documents\PID.X\lcd.c
+7EF cinit CODE >902:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7EF cinit CODE >905:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7EF cinit CODE >928:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F0 cinit CODE >929:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F1 cinit CODE >930:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F2 cinit CODE >931:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F3 cinit CODE >932:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F4 cinit CODE >933:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F5 cinit CODE >934:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F6 cinit CODE >935:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F7 cinit CODE >936:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F8 cinit CODE >937:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7F9 cinit CODE >938:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7FA cinit CODE >939:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7FB cinit CODE >940:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7FC cinit CODE >946:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7FC cinit CODE >948:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+7FD cinit CODE >949:C:\Users\LARI_3\AppData\Local\Temp\s4as.
+56 text5_split_8 CODE >136:C:\Users\LARI_3\Documents\PID.X\lcd.c
+89 text5_split_8 CODE >137:C:\Users\LARI_3\Documents\PID.X\lcd.c
+BC text5_split_8 CODE >138:C:\Users\LARI_3\Documents\PID.X\lcd.c
+BD text5_split_8 CODE >140:C:\Users\LARI_3\Documents\PID.X\lcd.c
+EB text5_split_8 CODE >141:C:\Users\LARI_3\Documents\PID.X\lcd.c
+120 text5_split_8 CODE >142:C:\Users\LARI_3\Documents\PID.X\lcd.c
+153 text5_split_8 CODE >143:C:\Users\LARI_3\Documents\PID.X\lcd.c
+186 text5_split_8 CODE >144:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1B9 text5_split_8 CODE >145:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1EC text5_split_8 CODE >146:C:\Users\LARI_3\Documents\PID.X\lcd.c
+21F text5_split_8 CODE >147:C:\Users\LARI_3\Documents\PID.X\lcd.c
+220 text5_split_8 CODE >149:C:\Users\LARI_3\Documents\PID.X\lcd.c
+24E text5_split_8 CODE >150:C:\Users\LARI_3\Documents\PID.X\lcd.c
+281 text5_split_8 CODE >151:C:\Users\LARI_3\Documents\PID.X\lcd.c
+2B4 text5_split_8 CODE >152:C:\Users\LARI_3\Documents\PID.X\lcd.c
+2E9 text5_split_8 CODE >153:C:\Users\LARI_3\Documents\PID.X\lcd.c
+31E text5_split_8 CODE >154:C:\Users\LARI_3\Documents\PID.X\lcd.c
+353 text5_split_8 CODE >155:C:\Users\LARI_3\Documents\PID.X\lcd.c
+388 text5_split_8 CODE >156:C:\Users\LARI_3\Documents\PID.X\lcd.c
+389 text5_split_8 CODE >158:C:\Users\LARI_3\Documents\PID.X\lcd.c
+3B7 text5_split_8 CODE >159:C:\Users\LARI_3\Documents\PID.X\lcd.c
+3EA text5_split_8 CODE >160:C:\Users\LARI_3\Documents\PID.X\lcd.c
+41D text5_split_8 CODE >161:C:\Users\LARI_3\Documents\PID.X\lcd.c
+450 text5_split_8 CODE >162:C:\Users\LARI_3\Documents\PID.X\lcd.c
+483 text5_split_8 CODE >163:C:\Users\LARI_3\Documents\PID.X\lcd.c
+4B6 text5_split_8 CODE >164:C:\Users\LARI_3\Documents\PID.X\lcd.c
+4E9 text5_split_8 CODE >165:C:\Users\LARI_3\Documents\PID.X\lcd.c
+4EA text5_split_8 CODE >167:C:\Users\LARI_3\Documents\PID.X\lcd.c
+518 text5_split_8 CODE >168:C:\Users\LARI_3\Documents\PID.X\lcd.c
+54B text5_split_8 CODE >169:C:\Users\LARI_3\Documents\PID.X\lcd.c
+57E text5_split_8 CODE >170:C:\Users\LARI_3\Documents\PID.X\lcd.c
+5B1 text5_split_8 CODE >171:C:\Users\LARI_3\Documents\PID.X\lcd.c
+5E6 text5_split_8 CODE >172:C:\Users\LARI_3\Documents\PID.X\lcd.c
+619 text5_split_8 CODE >173:C:\Users\LARI_3\Documents\PID.X\lcd.c
+64C text5_split_8 CODE >174:C:\Users\LARI_3\Documents\PID.X\lcd.c
+64D text5_split_8 CODE >176:C:\Users\LARI_3\Documents\PID.X\lcd.c
+67B text5_split_8 CODE >177:C:\Users\LARI_3\Documents\PID.X\lcd.c
+6B0 text5_split_8 CODE >178:C:\Users\LARI_3\Documents\PID.X\lcd.c
+6E5 text5_split_8 CODE >179:C:\Users\LARI_3\Documents\PID.X\lcd.c
+718 text5_split_8 CODE >180:C:\Users\LARI_3\Documents\PID.X\lcd.c
+74B text5_split_8 CODE >181:C:\Users\LARI_3\Documents\PID.X\lcd.c
+77E text5_split_8 CODE >182:C:\Users\LARI_3\Documents\PID.X\lcd.c
+7B3 text5_split_8 CODE >184:C:\Users\LARI_3\Documents\PID.X\lcd.c
+7B4 text5_split_8 CODE >84:C:\Users\LARI_3\Documents\PID.X\lcd.c
+7DC text5_split_8 CODE >185:C:\Users\LARI_3\Documents\PID.X\lcd.c
+999 text5_split_7 CODE >128:C:\Users\LARI_3\Documents\PID.X\lcd.c
+9CC text5_split_7 CODE >129:C:\Users\LARI_3\Documents\PID.X\lcd.c
+9CD text5_split_7 CODE >131:C:\Users\LARI_3\Documents\PID.X\lcd.c
+9FB text5_split_7 CODE >132:C:\Users\LARI_3\Documents\PID.X\lcd.c
+A30 text5_split_7 CODE >133:C:\Users\LARI_3\Documents\PID.X\lcd.c
+A63 text5_split_7 CODE >134:C:\Users\LARI_3\Documents\PID.X\lcd.c
+A96 text5_split_7 CODE >135:C:\Users\LARI_3\Documents\PID.X\lcd.c
+864 text5_split_6 CODE >122:C:\Users\LARI_3\Documents\PID.X\lcd.c
+894 text5_split_6 CODE >123:C:\Users\LARI_3\Documents\PID.X\lcd.c
+8C7 text5_split_6 CODE >124:C:\Users\LARI_3\Documents\PID.X\lcd.c
+8FA text5_split_6 CODE >125:C:\Users\LARI_3\Documents\PID.X\lcd.c
+92F text5_split_6 CODE >126:C:\Users\LARI_3\Documents\PID.X\lcd.c
+964 text5_split_6 CODE >127:C:\Users\LARI_3\Documents\PID.X\lcd.c
+10F0 text5_split_5 CODE >118:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1125 text5_split_5 CODE >119:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1158 text5_split_5 CODE >120:C:\Users\LARI_3\Documents\PID.X\lcd.c
+ACD text5_split_4 CODE >110:C:\Users\LARI_3\Documents\PID.X\lcd.c
+B00 text5_split_4 CODE >111:C:\Users\LARI_3\Documents\PID.X\lcd.c
+B01 text5_split_4 CODE >113:C:\Users\LARI_3\Documents\PID.X\lcd.c
+B2F text5_split_4 CODE >114:C:\Users\LARI_3\Documents\PID.X\lcd.c
+B62 text5_split_4 CODE >115:C:\Users\LARI_3\Documents\PID.X\lcd.c
+B95 text5_split_4 CODE >116:C:\Users\LARI_3\Documents\PID.X\lcd.c
+BC8 text5_split_4 CODE >117:C:\Users\LARI_3\Documents\PID.X\lcd.c
+15DD text5_split_3 CODE >104:C:\Users\LARI_3\Documents\PID.X\lcd.c
+160B text5_split_3 CODE >105:C:\Users\LARI_3\Documents\PID.X\lcd.c
+163E text5_split_3 CODE >106:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1673 text5_split_3 CODE >107:C:\Users\LARI_3\Documents\PID.X\lcd.c
+16A6 text5_split_3 CODE >108:C:\Users\LARI_3\Documents\PID.X\lcd.c
+16D9 text5_split_3 CODE >109:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1207 text5_split_2 CODE >100:C:\Users\LARI_3\Documents\PID.X\lcd.c
+123C text5_split_2 CODE >101:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1271 text5_split_2 CODE >102:C:\Users\LARI_3\Documents\PID.X\lcd.c
 D10 text5_split_1 CODE >91:C:\Users\LARI_3\Documents\PID.X\lcd.c
 D30 text5_split_1 CODE >92:C:\Users\LARI_3\Documents\PID.X\lcd.c
 D65 text5_split_1 CODE >93:C:\Users\LARI_3\Documents\PID.X\lcd.c
@@ -204,25 +207,25 @@ D96 text5_split_1 CODE >96:C:\Users\LARI_3\Documents\PID.X\lcd.c
 DC9 text5_split_1 CODE >97:C:\Users\LARI_3\Documents\PID.X\lcd.c
 DFC text5_split_1 CODE >98:C:\Users\LARI_3\Documents\PID.X\lcd.c
 E31 text5_split_1 CODE >99:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1E99 text20 CODE >38:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1E99 text20 CODE >40:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1E9D text20 CODE >41:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1E9F text20 CODE >42:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA1 text20 CODE >45:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA2 text20 CODE >46:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA3 text20 CODE >47:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA4 text20 CODE >48:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA5 text20 CODE >49:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA6 text20 CODE >50:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA7 text20 CODE >51:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA8 text20 CODE >52:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EA9 text20 CODE >53:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EAA text20 CODE >54:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EAB text20 CODE >55:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EAC text20 CODE >56:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EAD text20 CODE >60:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EAF text20 CODE >64:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1EB1 text20 CODE >66:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DF3 text20 CODE >38:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DF3 text20 CODE >40:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DF7 text20 CODE >41:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DF9 text20 CODE >42:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DFB text20 CODE >45:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DFC text20 CODE >46:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DFD text20 CODE >47:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DFE text20 CODE >48:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1DFF text20 CODE >49:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E00 text20 CODE >50:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E01 text20 CODE >51:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E02 text20 CODE >52:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E03 text20 CODE >53:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E04 text20 CODE >54:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E05 text20 CODE >55:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E06 text20 CODE >56:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E07 text20 CODE >60:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E09 text20 CODE >64:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E0B text20 CODE >66:C:\Users\LARI_3\Documents\PID.X\lcd.c
 E46 text19 CODE >9:C:\Users\LARI_3\Documents\PID.X\lcd.c
 E47 text19 CODE >11:C:\Users\LARI_3\Documents\PID.X\lcd.c
 E5C text19 CODE >12:C:\Users\LARI_3\Documents\PID.X\lcd.c
@@ -232,13 +235,13 @@ E9B text19 CODE >15:C:\Users\LARI_3\Documents\PID.X\lcd.c
 EB0 text19 CODE >16:C:\Users\LARI_3\Documents\PID.X\lcd.c
 EC5 text19 CODE >17:C:\Users\LARI_3\Documents\PID.X\lcd.c
 EDA text19 CODE >20:C:\Users\LARI_3\Documents\PID.X\lcd.c
-EEF text19 CODE >21:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F04 text19 CODE >22:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F19 text19 CODE >23:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F2E text19 CODE >24:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F43 text19 CODE >25:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F58 text19 CODE >26:C:\Users\LARI_3\Documents\PID.X\lcd.c
-F6D text19 CODE >29:C:\Users\LARI_3\Documents\PID.X\lcd.c
+EEE text19 CODE >21:C:\Users\LARI_3\Documents\PID.X\lcd.c
+F03 text19 CODE >22:C:\Users\LARI_3\Documents\PID.X\lcd.c
+F18 text19 CODE >23:C:\Users\LARI_3\Documents\PID.X\lcd.c
+F2D text19 CODE >24:C:\Users\LARI_3\Documents\PID.X\lcd.c
+F42 text19 CODE >25:C:\Users\LARI_3\Documents\PID.X\lcd.c
+F57 text19 CODE >26:C:\Users\LARI_3\Documents\PID.X\lcd.c
+F6C text19 CODE >29:C:\Users\LARI_3\Documents\PID.X\lcd.c
 F81 text19 CODE >30:C:\Users\LARI_3\Documents\PID.X\lcd.c
 F96 text19 CODE >31:C:\Users\LARI_3\Documents\PID.X\lcd.c
 FAB text19 CODE >32:C:\Users\LARI_3\Documents\PID.X\lcd.c
@@ -246,310 +249,314 @@ FC0 text19 CODE >33:C:\Users\LARI_3\Documents\PID.X\lcd.c
 FD5 text19 CODE >34:C:\Users\LARI_3\Documents\PID.X\lcd.c
 FEA text19 CODE >35:C:\Users\LARI_3\Documents\PID.X\lcd.c
 FFF text19 CODE >36:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1F94 text18 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1F94 text18 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1F9C text18 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FA3 text18 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FA7 text18 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FAF text18 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FB4 text18 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FB8 text18 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FC2 text18 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FCA text18 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FCA text18 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FCF text18 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FD1 text18 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FD9 text18 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FDF text18 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FE1 text18 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FE7 text18 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FE9 text18 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FFB text18 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FFE text18 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1FFF text18 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
-1EEC text17 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
-1EEC text17 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
-1EED text17 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
-1EEF text17 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
-1EF4 text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
-1EF6 text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
-15E6 text16 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-15E6 text16 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-15F4 text16 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1600 text16 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-160F text16 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1616 text16 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1625 text16 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1629 text16 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-162A text16 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-162B text16 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-162C text16 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-162D text16 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-162E text16 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1634 text16 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1635 text16 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-163B text16 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-163F text16 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1647 text16 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1649 text16 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1654 text16 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-165C text16 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1660 text16 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1665 text16 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1669 text16 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1671 text16 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1673 text16 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-167E text16 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1686 text16 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-168A text16 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-168E text16 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1690 text16 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1696 text16 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16A0 text16 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16A2 text16 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16A8 text16 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16B2 text16 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16B3 text16 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16C1 text16 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16C3 text16 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16C9 text16 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16D3 text16 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-16D5 text16 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
-1429 text15 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1429 text15 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-143A text15 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1441 text15 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1450 text15 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1457 text15 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-145C text15 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-146E text15 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1480 text15 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1484 text15 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1485 text15 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1486 text15 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-148C text15 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1492 text15 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1496 text15 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1498 text15 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14A6 text15 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14AE text15 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14B6 text15 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14BA text15 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14BE text15 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14C0 text15 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14CE text15 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14D6 text15 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14DE text15 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-14E2 text15 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
-1253 text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1253 text14 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1264 text14 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-126D text14 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-127F text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1280 text14 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1286 text14 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-128D text14 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-128F text14 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1291 text14 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1296 text14 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-129F text14 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12A8 text14 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12AF text14 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12B3 text14 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12BC text14 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12C5 text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12C7 text14 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12C7 text14 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12CA text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12CD text14 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-12D8 text14 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
-1370 text13 CODE >44:C:\Users\LARI_3\Documents\PID.X\main.c
-1370 text13 CODE >46:C:\Users\LARI_3\Documents\PID.X\main.c
-1381 text13 CODE >48:C:\Users\LARI_3\Documents\PID.X\main.c
-1385 text13 CODE >49:C:\Users\LARI_3\Documents\PID.X\main.c
-1389 text13 CODE >50:C:\Users\LARI_3\Documents\PID.X\main.c
-1391 text13 CODE >51:C:\Users\LARI_3\Documents\PID.X\main.c
-1393 text13 CODE >53:C:\Users\LARI_3\Documents\PID.X\main.c
-1EB2 text12 CODE >31:C:\Users\LARI_3\Documents\PID.X\main.c
-1EB2 text12 CODE >34:C:\Users\LARI_3\Documents\PID.X\main.c
-1EB6 text12 CODE >35:C:\Users\LARI_3\Documents\PID.X\main.c
-1EB8 text12 CODE >36:C:\Users\LARI_3\Documents\PID.X\main.c
-1EBA text12 CODE >39:C:\Users\LARI_3\Documents\PID.X\main.c
-1EC0 text12 CODE >40:C:\Users\LARI_3\Documents\PID.X\main.c
-1EC6 text12 CODE >41:C:\Users\LARI_3\Documents\PID.X\main.c
-1ECC text12 CODE >42:C:\Users\LARI_3\Documents\PID.X\main.c
-12E1 text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12E1 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12E4 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12E6 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12F1 text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12F3 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12F3 text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-12F5 text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1300 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1304 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-130C text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1312 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1314 text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1316 text11 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-131F text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1323 text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1324 text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-132D text11 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-133D text11 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-134B text11 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-134C text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1355 text11 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1359 text11 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-135C text11 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-1367 text11 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
-10C7 text10 CODE >7:C:\Users\LARI_3\Documents\PID.X\uart.c
-10C7 text10 CODE >10:C:\Users\LARI_3\Documents\PID.X\uart.c
-1127 text10 CODE >11:C:\Users\LARI_3\Documents\PID.X\uart.c
-112A text10 CODE >13:C:\Users\LARI_3\Documents\PID.X\uart.c
-112C text10 CODE >14:C:\Users\LARI_3\Documents\PID.X\uart.c
-112D text10 CODE >15:C:\Users\LARI_3\Documents\PID.X\uart.c
-1130 text10 CODE >16:C:\Users\LARI_3\Documents\PID.X\uart.c
-1133 text10 CODE >17:C:\Users\LARI_3\Documents\PID.X\uart.c
-1134 text10 CODE >18:C:\Users\LARI_3\Documents\PID.X\uart.c
-1137 text10 CODE >19:C:\Users\LARI_3\Documents\PID.X\uart.c
-806 text9 CODE >24:C:\Users\LARI_3\Documents\PID.X\uart.c
-807 text9 CODE >25:C:\Users\LARI_3\Documents\PID.X\uart.c
-80B text9 CODE >26:C:\Users\LARI_3\Documents\PID.X\uart.c
-80F text9 CODE >27:C:\Users\LARI_3\Documents\PID.X\uart.c
-1ECD text8 CODE >36:C:\Users\LARI_3\Documents\PID.X\uart.c
-1ECE text8 CODE >38:C:\Users\LARI_3\Documents\PID.X\uart.c
-1ED9 text8 CODE >39:C:\Users\LARI_3\Documents\PID.X\uart.c
-1EE5 text8 CODE >38:C:\Users\LARI_3\Documents\PID.X\uart.c
-1002 text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1002 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1003 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1005 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-100A text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-100C text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-100E text7 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1013 text7 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1017 text7 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1019 text7 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-101D text7 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-101F text7 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1021 text7 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1028 text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-102C text7 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-102D text7 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1034 text7 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-103C text7 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1042 text7 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1043 text7 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-104A text7 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-104E text7 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1051 text7 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1056 text7 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
-1F49 text6 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F49 text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F4A text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F4C text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F51 text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F53 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F55 text6 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F5A text6 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F5E text6 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F60 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F62 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F69 text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F6D text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F6E text6 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F76 text6 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F7C text6 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F83 text6 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F87 text6 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F8A text6 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-1F8F text6 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
-885 text5 CODE >83:C:\Users\LARI_3\Documents\PID.X\lcd.c
-885 text5 CODE >84:C:\Users\LARI_3\Documents\PID.X\lcd.c
-888 text5 CODE >86:C:\Users\LARI_3\Documents\PID.X\lcd.c
-8B6 text5 CODE >87:C:\Users\LARI_3\Documents\PID.X\lcd.c
-8E9 text5 CODE >88:C:\Users\LARI_3\Documents\PID.X\lcd.c
-91C text5 CODE >89:C:\Users\LARI_3\Documents\PID.X\lcd.c
-94F text5 CODE >90:C:\Users\LARI_3\Documents\PID.X\lcd.c
-982 text5 CODE >91:C:\Users\LARI_3\Documents\PID.X\lcd.c
-810 text4 CODE >69:C:\Users\LARI_3\Documents\PID.X\lcd.c
-810 text4 CODE >71:C:\Users\LARI_3\Documents\PID.X\lcd.c
-82E text4 CODE >72:C:\Users\LARI_3\Documents\PID.X\lcd.c
-843 text4 CODE >74:C:\Users\LARI_3\Documents\PID.X\lcd.c
-85F text4 CODE >75:C:\Users\LARI_3\Documents\PID.X\lcd.c
-874 text4 CODE >76:C:\Users\LARI_3\Documents\PID.X\lcd.c
-877 text4 CODE >78:C:\Users\LARI_3\Documents\PID.X\lcd.c
-884 text4 CODE >80:C:\Users\LARI_3\Documents\PID.X\lcd.c
-1F0D text3 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F0D text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F0F text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F13 text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F15 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F17 text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F1E text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F22 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F23 text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F2A text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F32 text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F38 text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F39 text3 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F40 text3 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-1F44 text3 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
-7 text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-7 text2 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-B text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-D text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-F text2 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-16 text2 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-1A text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-1B text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-23 text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-29 text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-30 text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-34 text2 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
-105B text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-105E text1 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-1062 text1 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-1075 text1 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-1079 text1 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-107D text1 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-1083 text1 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-1096 text1 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-10A7 text1 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-10AD text1 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-10B1 text1 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-10B5 text1 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-10BE text1 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-10C2 text1 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
-14FC maintext CODE >57:C:\Users\LARI_3\Documents\PID.X\main.c
-14FC maintext CODE >61:C:\Users\LARI_3\Documents\PID.X\main.c
-1502 maintext CODE >68:C:\Users\LARI_3\Documents\PID.X\main.c
-1507 maintext CODE >69:C:\Users\LARI_3\Documents\PID.X\main.c
-1517 maintext CODE >70:C:\Users\LARI_3\Documents\PID.X\main.c
-1526 maintext CODE >71:C:\Users\LARI_3\Documents\PID.X\main.c
-152B maintext CODE >74:C:\Users\LARI_3\Documents\PID.X\main.c
-152E maintext CODE >75:C:\Users\LARI_3\Documents\PID.X\main.c
-1530 maintext CODE >76:C:\Users\LARI_3\Documents\PID.X\main.c
-1532 maintext CODE >77:C:\Users\LARI_3\Documents\PID.X\main.c
-1533 maintext CODE >78:C:\Users\LARI_3\Documents\PID.X\main.c
-1536 maintext CODE >79:C:\Users\LARI_3\Documents\PID.X\main.c
-1538 maintext CODE >80:C:\Users\LARI_3\Documents\PID.X\main.c
-153A maintext CODE >83:C:\Users\LARI_3\Documents\PID.X\main.c
-154C maintext CODE >87:C:\Users\LARI_3\Documents\PID.X\main.c
-1578 maintext CODE >89:C:\Users\LARI_3\Documents\PID.X\main.c
-1588 maintext CODE >91:C:\Users\LARI_3\Documents\PID.X\main.c
-1589 maintext CODE >92:C:\Users\LARI_3\Documents\PID.X\main.c
-158A maintext CODE >97:C:\Users\LARI_3\Documents\PID.X\main.c
-1590 maintext CODE >100:C:\Users\LARI_3\Documents\PID.X\main.c
-15A5 maintext CODE >103:C:\Users\LARI_3\Documents\PID.X\main.c
-15B8 maintext CODE >106:C:\Users\LARI_3\Documents\PID.X\main.c
-15C6 maintext CODE >107:C:\Users\LARI_3\Documents\PID.X\main.c
-15CC maintext CODE >108:C:\Users\LARI_3\Documents\PID.X\main.c
-15D2 maintext CODE >112:C:\Users\LARI_3\Documents\PID.X\main.c
-15D5 maintext CODE >113:C:\Users\LARI_3\Documents\PID.X\main.c
-15D6 maintext CODE >116:C:\Users\LARI_3\Documents\PID.X\main.c
-15E5 maintext CODE >94:C:\Users\LARI_3\Documents\PID.X\main.c
+1EB4 text18 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EB4 text18 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EBC text18 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EC3 text18 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EC7 text18 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1ECF text18 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1ED4 text18 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1ED8 text18 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EE2 text18 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EEA text18 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EEA text18 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EEF text18 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EF1 text18 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EF9 text18 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1EFF text18 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1F01 text18 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1F07 text18 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1F09 text18 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1F1B text18 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1F1E text18 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+1F1F text18 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+13 text17 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
+13 text17 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
+14 text17 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
+16 text17 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
+1B text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
+1D text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awtoft.c
+14D4 text16 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+14D4 text16 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+14E2 text16 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+14EE text16 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+14FD text16 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1504 text16 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1513 text16 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1517 text16 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1518 text16 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1519 text16 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+151A text16 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+151B text16 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+151C text16 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1522 text16 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1523 text16 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1529 text16 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+152D text16 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1535 text16 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1537 text16 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1542 text16 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+154A text16 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+154E text16 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1553 text16 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1557 text16 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+155F text16 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1561 text16 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+156C text16 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1574 text16 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1578 text16 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+157C text16 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+157E text16 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1584 text16 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+158E text16 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1590 text16 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1596 text16 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15A0 text16 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15A1 text16 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15AF text16 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15B1 text16 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15B7 text16 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15C1 text16 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+15C3 text16 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+1301 text15 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1301 text15 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1312 text15 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1319 text15 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1328 text15 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+132F text15 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1334 text15 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1346 text15 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1358 text15 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+135C text15 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+135D text15 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+135E text15 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1364 text15 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+136A text15 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+136E text15 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1370 text15 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+137E text15 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1386 text15 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+138E text15 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1392 text15 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1396 text15 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1398 text15 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+13A6 text15 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+13AE text15 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+13B6 text15 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+13BA text15 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+1159 text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1159 text14 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1168 text14 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1171 text14 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1183 text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1184 text14 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+118A text14 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1191 text14 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1193 text14 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+1195 text14 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+119A text14 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11A3 text14 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11AC text14 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11B3 text14 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11B7 text14 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11C0 text14 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11C9 text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11CB text14 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11CB text14 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11CE text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11D1 text14 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+11DC text14 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+BDD text13 CODE >45:C:\Users\LARI_3\Documents\PID.X\main.c
+BDD text13 CODE >47:C:\Users\LARI_3\Documents\PID.X\main.c
+BEE text13 CODE >49:C:\Users\LARI_3\Documents\PID.X\main.c
+BF2 text13 CODE >50:C:\Users\LARI_3\Documents\PID.X\main.c
+BFC text13 CODE >51:C:\Users\LARI_3\Documents\PID.X\main.c
+C0C text13 CODE >52:C:\Users\LARI_3\Documents\PID.X\main.c
+C27 text13 CODE >53:C:\Users\LARI_3\Documents\PID.X\main.c
+C33 text13 CODE >54:C:\Users\LARI_3\Documents\PID.X\main.c
+CF1 text13 CODE >55:C:\Users\LARI_3\Documents\PID.X\main.c
+D07 text13 CODE >56:C:\Users\LARI_3\Documents\PID.X\main.c
+D08 text13 CODE >58:C:\Users\LARI_3\Documents\PID.X\main.c
+1E0C text12 CODE >32:C:\Users\LARI_3\Documents\PID.X\main.c
+1E0C text12 CODE >35:C:\Users\LARI_3\Documents\PID.X\main.c
+1E10 text12 CODE >36:C:\Users\LARI_3\Documents\PID.X\main.c
+1E12 text12 CODE >37:C:\Users\LARI_3\Documents\PID.X\main.c
+1E14 text12 CODE >40:C:\Users\LARI_3\Documents\PID.X\main.c
+1E1A text12 CODE >41:C:\Users\LARI_3\Documents\PID.X\main.c
+1E20 text12 CODE >42:C:\Users\LARI_3\Documents\PID.X\main.c
+1E26 text12 CODE >43:C:\Users\LARI_3\Documents\PID.X\main.c
+1272 text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1272 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1275 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1277 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1282 text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1284 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1284 text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1286 text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1291 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1295 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+129D text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12A3 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12A5 text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12A7 text11 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12B0 text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12B4 text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12B5 text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12BE text11 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12CE text11 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12DC text11 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12DD text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12E6 text11 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12EA text11 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12ED text11 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+12F8 text11 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\aldiv.c
+1F8C text10 CODE >7:C:\Users\LARI_3\Documents\PID.X\uart.c
+1F8C text10 CODE >10:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FEC text10 CODE >11:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FEF text10 CODE >13:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FF1 text10 CODE >14:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FF2 text10 CODE >15:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FF5 text10 CODE >16:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FF8 text10 CODE >17:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FF9 text10 CODE >18:C:\Users\LARI_3\Documents\PID.X\uart.c
+1FFC text10 CODE >19:C:\Users\LARI_3\Documents\PID.X\uart.c
+9 text9 CODE >24:C:\Users\LARI_3\Documents\PID.X\uart.c
+A text9 CODE >25:C:\Users\LARI_3\Documents\PID.X\uart.c
+E text9 CODE >26:C:\Users\LARI_3\Documents\PID.X\uart.c
+12 text9 CODE >27:C:\Users\LARI_3\Documents\PID.X\uart.c
+1E27 text8 CODE >36:C:\Users\LARI_3\Documents\PID.X\uart.c
+1E28 text8 CODE >38:C:\Users\LARI_3\Documents\PID.X\uart.c
+1E33 text8 CODE >39:C:\Users\LARI_3\Documents\PID.X\uart.c
+1E3F text8 CODE >38:C:\Users\LARI_3\Documents\PID.X\uart.c
+80B text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+80B text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+80C text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+80E text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+813 text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+815 text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+817 text7 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+81C text7 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+820 text7 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+822 text7 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+826 text7 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+828 text7 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+82A text7 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+831 text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+835 text7 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+836 text7 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+83D text7 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+845 text7 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+84B text7 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+84C text7 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+853 text7 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+857 text7 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+85A text7 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+85F text7 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+100E text6 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+100E text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+100F text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1011 text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1016 text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1018 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+101A text6 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+101F text6 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1023 text6 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1025 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1027 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+102E text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1032 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1033 text6 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+103B text6 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1041 text6 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1048 text6 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+104C text6 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+104F text6 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+1054 text6 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
+16EE text5 CODE >83:C:\Users\LARI_3\Documents\PID.X\lcd.c
+16EE text5 CODE >84:C:\Users\LARI_3\Documents\PID.X\lcd.c
+16F1 text5 CODE >86:C:\Users\LARI_3\Documents\PID.X\lcd.c
+171F text5 CODE >87:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1752 text5 CODE >88:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1785 text5 CODE >89:C:\Users\LARI_3\Documents\PID.X\lcd.c
+17B8 text5 CODE >90:C:\Users\LARI_3\Documents\PID.X\lcd.c
+17EB text5 CODE >91:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1059 text4 CODE >69:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1059 text4 CODE >71:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1077 text4 CODE >72:C:\Users\LARI_3\Documents\PID.X\lcd.c
+108C text4 CODE >74:C:\Users\LARI_3\Documents\PID.X\lcd.c
+10A8 text4 CODE >75:C:\Users\LARI_3\Documents\PID.X\lcd.c
+10BD text4 CODE >76:C:\Users\LARI_3\Documents\PID.X\lcd.c
+10C0 text4 CODE >78:C:\Users\LARI_3\Documents\PID.X\lcd.c
+10CD text4 CODE >80:C:\Users\LARI_3\Documents\PID.X\lcd.c
+1E78 text3 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E78 text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E7A text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E7E text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E80 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E82 text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E89 text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E8D text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E8E text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E95 text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E9D text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1EA3 text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1EA4 text3 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1EAB text3 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1EAF text3 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+1E46 text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E46 text2 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E4A text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E4C text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E4E text2 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E55 text2 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E59 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E5A text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E62 text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E68 text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E6F text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1E73 text2 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+1F20 text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F23 text1 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F27 text1 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F3A text1 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F3E text1 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F42 text1 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F48 text1 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F5B text1 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F6C text1 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F72 text1 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F76 text1 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F7A text1 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F83 text1 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+1F87 text1 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
+13D4 maintext CODE >61:C:\Users\LARI_3\Documents\PID.X\main.c
+13D4 maintext CODE >65:C:\Users\LARI_3\Documents\PID.X\main.c
+13DA maintext CODE >72:C:\Users\LARI_3\Documents\PID.X\main.c
+13DF maintext CODE >73:C:\Users\LARI_3\Documents\PID.X\main.c
+13EF maintext CODE >74:C:\Users\LARI_3\Documents\PID.X\main.c
+13FE maintext CODE >75:C:\Users\LARI_3\Documents\PID.X\main.c
+1403 maintext CODE >78:C:\Users\LARI_3\Documents\PID.X\main.c
+1406 maintext CODE >79:C:\Users\LARI_3\Documents\PID.X\main.c
+1408 maintext CODE >80:C:\Users\LARI_3\Documents\PID.X\main.c
+140A maintext CODE >81:C:\Users\LARI_3\Documents\PID.X\main.c
+140B maintext CODE >82:C:\Users\LARI_3\Documents\PID.X\main.c
+140E maintext CODE >83:C:\Users\LARI_3\Documents\PID.X\main.c
+1410 maintext CODE >84:C:\Users\LARI_3\Documents\PID.X\main.c
+1412 maintext CODE >87:C:\Users\LARI_3\Documents\PID.X\main.c
+1424 maintext CODE >91:C:\Users\LARI_3\Documents\PID.X\main.c
+1450 maintext CODE >93:C:\Users\LARI_3\Documents\PID.X\main.c
+1460 maintext CODE >95:C:\Users\LARI_3\Documents\PID.X\main.c
+1461 maintext CODE >96:C:\Users\LARI_3\Documents\PID.X\main.c
+1462 maintext CODE >101:C:\Users\LARI_3\Documents\PID.X\main.c
+146E maintext CODE >104:C:\Users\LARI_3\Documents\PID.X\main.c
+1489 maintext CODE >107:C:\Users\LARI_3\Documents\PID.X\main.c
+14A4 maintext CODE >110:C:\Users\LARI_3\Documents\PID.X\main.c
+14B4 maintext CODE >111:C:\Users\LARI_3\Documents\PID.X\main.c
+14BA maintext CODE >112:C:\Users\LARI_3\Documents\PID.X\main.c
+14C0 maintext CODE >116:C:\Users\LARI_3\Documents\PID.X\main.c
+14C3 maintext CODE >117:C:\Users\LARI_3\Documents\PID.X\main.c
+14C4 maintext CODE >120:C:\Users\LARI_3\Documents\PID.X\main.c
+14D3 maintext CODE >98:C:\Users\LARI_3\Documents\PID.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -562,23 +569,23 @@ F text2 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-_D 67 0 BANK0 1 bssBANK0 dist/default/production\PID.X.production.obj
-_I 69 0 BANK0 1 bssBANK0 dist/default/production\PID.X.production.obj
-_P 6B 0 BANK0 1 bssBANK0 dist/default/production\PID.X.production.obj
+_D DD 0 BANK1 1 bssBANK1 dist/default/production\PID.X.production.obj
+_I DF 0 BANK1 1 bssBANK1 dist/default/production\PID.X.production.obj
+_P E1 0 BANK1 1 bssBANK1 dist/default/production\PID.X.production.obj
 ___latbits 2 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Hspace_0 2008 0 ABS 0 - -
-__Hspace_1 1C8 0 ABS 0 - -
+__Hspace_1 1AC 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 ___awtoft@sign 7D 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-_kd 61 0 BANK0 1 nvBANK0 dist/default/production\PID.X.production.obj
-_ki 64 0 BANK0 1 nvBANK0 dist/default/production\PID.X.production.obj
-_kp 5E 0 BANK0 1 nvBANK0 dist/default/production\PID.X.production.obj
-?_PID 4B 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+_kd E8 0 BANK1 1 nvBANK1 dist/default/production\PID.X.production.obj
+_ki EB 0 BANK1 1 nvBANK1 dist/default/production\PID.X.production.obj
+_kp E5 0 BANK1 1 nvBANK1 dist/default/production\PID.X.production.obj
+?_PID 3D 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _BRGH 4C2 0 ABS 0 - dist/default/production\PID.X.production.obj
 _CREN C4 0 ABS 0 - dist/default/production\PID.X.production.obj
@@ -587,13 +594,13 @@ _SPEN C7 0 ABS 0 - dist/default/production\PID.X.production.obj
 _SYNC 4C4 0 ABS 0 - dist/default/production\PID.X.production.obj
 _TRMT 4C1 0 ABS 0 - dist/default/production\PID.X.production.obj
 _TXEN 4C5 0 ABS 0 - dist/default/production\PID.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-_main 29F8 0 CODE 0 maintext dist/default/production\PID.X.production.obj
-_utoa 20B6 0 CODE 0 text1 dist/default/production\PID.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+_main 27A8 0 CODE 0 maintext dist/default/production\PID.X.production.obj
+_utoa 3E40 0 CODE 0 text1 dist/default/production\PID.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___ftadd@f1 30 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___ftadd@f2 33 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
-start 0 0 CODE 0 init C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
+start 0 0 CODE 0 init C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\PID.X.production.obj
@@ -617,7 +624,7 @@ _LCDDATA6 116 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDDATA7 117 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDDATA8 118 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDDATA9 119 0 ABS 0 - dist/default/production\PID.X.production.obj
-_LCD_init 3D32 0 CODE 0 text20 dist/default/production\PID.X.production.obj
+_LCD_init 3BE6 0 CODE 0 text20 dist/default/production\PID.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 pnum$text5_split_1 1E 0 ABS 0 - dist/default/production\PID.X.production.obj
 pnum$text5_split_2 1F 0 ABS 0 - dist/default/production\PID.X.production.obj
@@ -630,19 +637,20 @@ pnum$text5_split_8 25 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 utoa@c 22 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 utoa@v 20 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-__end_of_LCD_init 3D64 0 CODE 0 text20 dist/default/production\PID.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+__end_of_LCD_init 3C18 0 CODE 0 text20 dist/default/production\PID.X.production.obj
 __size_of_LCD_mapping 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 pnum$text5 E 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___aldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\PID.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
-_UART_Write 100C 0 CODE 0 text9 dist/default/production\PID.X.production.obj
+_UART_Write 12 0 CODE 0 text9 dist/default/production\PID.X.production.obj
+_last_error E3 0 BANK1 1 bssBANK1 dist/default/production\PID.X.production.obj
 ___aldiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -658,55 +666,55 @@ __size_of___awtoft 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDDATA10 11A 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDDATA11 11B 0 ABS 0 - dist/default/production\PID.X.production.obj
 _CCPR2L 1B 0 ABS 0 - dist/default/production\PID.X.production.obj
-main@str A0 0 BANK1 1 cstackBANK1 dist/default/production\PID.X.production.obj
-___fttol@f1 3D 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+main@str 4D 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+___fttol@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
-__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
 ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __size_of___ftpack 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__end_of___aldiv 26E0 0 CODE 0 text11 dist/default/production\PID.X.production.obj
-__end_of___awdiv 20B6 0 CODE 0 text7 dist/default/production\PID.X.production.obj
-__end_of___awmod 3F28 0 CODE 0 text6 dist/default/production\PID.X.production.obj
-__end_of___ftadd 2DDE 0 CODE 0 text16 dist/default/production\PID.X.production.obj
-__end_of___ftmul 29F8 0 CODE 0 text15 dist/default/production\PID.X.production.obj
-__end_of___fttol 25C2 0 CODE 0 text14 dist/default/production\PID.X.production.obj
-__end_of___lwdiv 3E92 0 CODE 0 text3 dist/default/production\PID.X.production.obj
-__end_of___lwmod 72 0 CODE 0 text2 dist/default/production\PID.X.production.obj
+__end_of___aldiv 2602 0 CODE 0 text11 dist/default/production\PID.X.production.obj
+__end_of___awdiv 10C8 0 CODE 0 text7 dist/default/production\PID.X.production.obj
+__end_of___awmod 20B2 0 CODE 0 text6 dist/default/production\PID.X.production.obj
+__end_of___ftadd 2BBA 0 CODE 0 text16 dist/default/production\PID.X.production.obj
+__end_of___ftmul 27A8 0 CODE 0 text15 dist/default/production\PID.X.production.obj
+__end_of___fttol 23CA 0 CODE 0 text14 dist/default/production\PID.X.production.obj
+__end_of___lwdiv 3D68 0 CODE 0 text3 dist/default/production\PID.X.production.obj
+__end_of___lwmod 3CF0 0 CODE 0 text2 dist/default/production\PID.X.production.obj
 _INTCON B 0 ABS 0 - dist/default/production\PID.X.production.obj
-__end_of_UART_Write 1020 0 CODE 0 text9 dist/default/production\PID.X.production.obj
+__end_of_UART_Write 26 0 CODE 0 text9 dist/default/production\PID.X.production.obj
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 _LCDCON 107 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDSE0 11C 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDSE1 11D 0 ABS 0 - dist/default/production\PID.X.production.obj
 _LCDSE2 11E 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
-start_initialization FE8 0 CODE 0 cinit dist/default/production\PID.X.production.obj
+start_initialization FDE 0 CODE 0 cinit dist/default/production\PID.X.production.obj
 UART_Init@x 79 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 _OSCCON 8F 0 ABS 0 - dist/default/production\PID.X.production.obj
 __CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-___awtoft 3DD8 0 CODE 0 text17 dist/default/production\PID.X.production.obj
+___awtoft 26 0 CODE 0 text17 dist/default/production\PID.X.production.obj
 ___aldiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 _GO_nDONE F9 0 ABS 0 - dist/default/production\PID.X.production.obj
-__end_of___awtoft 3E1A 0 CODE 0 text17 dist/default/production\PID.X.production.obj
+__end_of___awtoft 68 0 CODE 0 text17 dist/default/production\PID.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\PID.X.production.obj
 __pcstackBANK3 190 0 BANK3 1 cstackBANK3 dist/default/production\PID.X.production.obj
 _T1SYNC 82 0 ABS 0 - dist/default/production\PID.X.production.obj
-___fttol@exp1 4A 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
-___fttol@lval 46 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
-__end_of_UART_Write_Text 3DD8 0 CODE 0 text8 dist/default/production\PID.X.production.obj
+___fttol@exp1 7D 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
+___fttol@lval 79 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
+__end_of_UART_Write_Text 3C8C 0 CODE 0 text8 dist/default/production\PID.X.production.obj
 _TMR1CS 81 0 ABS 0 - dist/default/production\PID.X.production.obj
 _TMR1ON 80 0 ABS 0 - dist/default/production\PID.X.production.obj
 _TRISC6 43E 0 ABS 0 - dist/default/production\PID.X.production.obj
 _TRISC7 43F 0 ABS 0 - dist/default/production\PID.X.production.obj
-___ftpack 3F28 0 CODE 0 text18 dist/default/production\PID.X.production.obj
+___ftpack 3D68 0 CODE 0 text18 dist/default/production\PID.X.production.obj
 utoa@buf 23 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 utoa@val 78 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ___ftpack@arg 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ___ftpack@exp 73 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-__end_of___ftpack 4000 0 CODE 0 text18 dist/default/production\PID.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+__end_of___ftpack 3E40 0 CODE 0 text18 dist/default/production\PID.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -718,19 +726,19 @@ ___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.produc
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4010 0 CONFIG 0 config -
-_displayDigit 110A 0 CODE 0 text5 dist/default/production\PID.X.production.obj
+_displayDigit 2DDC 0 CODE 0 text5 dist/default/production\PID.X.production.obj
 displayDigit@digito 79 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
 __Lbank3 0 0 ABS 0 bank3 -
-__Lcinit FE8 0 CODE 0 cinit -
+__Lcinit FDE 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 0 idloc -
 ___ftadd@exp1 3C 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___ftadd@exp2 3B 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___ftadd@sign 3A 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __Lstack 0 0 STACK 2 stack -
-PID@setpoint 4B 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+PID@setpoint 3D 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 0 0 CODE 0 init -
@@ -748,7 +756,7 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-__pnvBANK0 5E 0 BANK0 1 nvBANK0 dist/default/production\PID.X.production.obj
+__pnvBANK1 E5 0 BANK1 1 nvBANK1 dist/default/production\PID.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 __LcstackBANK3 0 0 ABS 0 cstackBANK3 -
@@ -762,53 +770,53 @@ psplit$6 230024 0 ABS 0 - dist/default/production\PID.X.production.obj
 psplit$7 240025 0 ABS 0 - dist/default/production\PID.X.production.obj
 __size_of_PID_init 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_UART_Write_Text 3D9A 0 CODE 0 text8 dist/default/production\PID.X.production.obj
-_PID 26E0 0 CODE 0 text13 dist/default/production\PID.X.production.obj
+_UART_Write_Text 3C4E 0 CODE 0 text8 dist/default/production\PID.X.production.obj
+_PID 17BA 0 CODE 0 text13 dist/default/production\PID.X.production.obj
 _PR2 92 0 ABS 0 - dist/default/production\PID.X.production.obj
 _RC5 3D 0 ABS 0 - dist/default/production\PID.X.production.obj
 _RD7 47 0 ABS 0 - dist/default/production\PID.X.production.obj
 __S0 2008 0 ABS 0 - -
-__S1 1C8 0 ABS 0 - -
+__S1 1AC 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 utoa@base 7A 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ___awtoft@c 78 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __size_of_displayDigit 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__end_of_PID 2852 0 CODE 0 text13 dist/default/production\PID.X.production.obj
+__end_of_PID 1A20 0 CODE 0 text13 dist/default/production\PID.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
 __Lintentry 0 0 CODE 0 intentry -
 UART_Write_Text@i 72 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-__LbssBANK0 0 0 ABS 0 bssBANK0 -
-_displayNumber 1020 0 CODE 0 text4 dist/default/production\PID.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+_displayNumber 20B2 0 CODE 0 text4 dist/default/production\PID.X.production.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 ?___awtoft 78 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __size_of_UART_Write 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__end_of_displayDigit FC4 0 CODE 0 text5_split_8 dist/default/production\PID.X.production.obj
-_PID_init 3D64 0 CODE 0 text12 dist/default/production\PID.X.production.obj
-__ptext10 218E 0 CODE 0 text10 dist/default/production\PID.X.production.obj
-__ptext11 25C2 0 CODE 0 text11 dist/default/production\PID.X.production.obj
-__ptext12 3D64 0 CODE 0 text12 dist/default/production\PID.X.production.obj
-__ptext13 26E0 0 CODE 0 text13 dist/default/production\PID.X.production.obj
-__ptext14 24A6 0 CODE 0 text14 dist/default/production\PID.X.production.obj
-__ptext15 2852 0 CODE 0 text15 dist/default/production\PID.X.production.obj
-__ptext16 2BCC 0 CODE 0 text16 dist/default/production\PID.X.production.obj
-__ptext17 3DD8 0 CODE 0 text17 dist/default/production\PID.X.production.obj
-__ptext18 3F28 0 CODE 0 text18 dist/default/production\PID.X.production.obj
+__end_of_displayDigit FBA 0 CODE 0 text5_split_8 dist/default/production\PID.X.production.obj
+_PID_init 3C18 0 CODE 0 text12 dist/default/production\PID.X.production.obj
+__ptext10 3F18 0 CODE 0 text10 dist/default/production\PID.X.production.obj
+__ptext11 24E4 0 CODE 0 text11 dist/default/production\PID.X.production.obj
+__ptext12 3C18 0 CODE 0 text12 dist/default/production\PID.X.production.obj
+__ptext13 17BA 0 CODE 0 text13 dist/default/production\PID.X.production.obj
+__ptext14 22B2 0 CODE 0 text14 dist/default/production\PID.X.production.obj
+__ptext15 2602 0 CODE 0 text15 dist/default/production\PID.X.production.obj
+__ptext16 29A8 0 CODE 0 text16 dist/default/production\PID.X.production.obj
+__ptext17 26 0 CODE 0 text17 dist/default/production\PID.X.production.obj
+__ptext18 3D68 0 CODE 0 text18 dist/default/production\PID.X.production.obj
 __ptext19 1C8C 0 CODE 0 text19 dist/default/production\PID.X.production.obj
-__ptext20 3D32 0 CODE 0 text20 dist/default/production\PID.X.production.obj
-___aldiv 25C2 0 CODE 0 text11 dist/default/production\PID.X.production.obj
-___awdiv 2004 0 CODE 0 text7 dist/default/production\PID.X.production.obj
-___awmod 3E92 0 CODE 0 text6 dist/default/production\PID.X.production.obj
-___ftadd 2BCC 0 CODE 0 text16 dist/default/production\PID.X.production.obj
-___ftmul 2852 0 CODE 0 text15 dist/default/production\PID.X.production.obj
-___fttol 24A6 0 CODE 0 text14 dist/default/production\PID.X.production.obj
-___lwdiv 3E1A 0 CODE 0 text3 dist/default/production\PID.X.production.obj
-___lwmod E 0 CODE 0 text2 dist/default/production\PID.X.production.obj
-__pmaintext 29F8 0 CODE 0 maintext dist/default/production\PID.X.production.obj
-__end_of_PID_init 3D9A 0 CODE 0 text12 dist/default/production\PID.X.production.obj
+__ptext20 3BE6 0 CODE 0 text20 dist/default/production\PID.X.production.obj
+___aldiv 24E4 0 CODE 0 text11 dist/default/production\PID.X.production.obj
+___awdiv 1016 0 CODE 0 text7 dist/default/production\PID.X.production.obj
+___awmod 201C 0 CODE 0 text6 dist/default/production\PID.X.production.obj
+___ftadd 29A8 0 CODE 0 text16 dist/default/production\PID.X.production.obj
+___ftmul 2602 0 CODE 0 text15 dist/default/production\PID.X.production.obj
+___fttol 22B2 0 CODE 0 text14 dist/default/production\PID.X.production.obj
+___lwdiv 3CF0 0 CODE 0 text3 dist/default/production\PID.X.production.obj
+___lwmod 3C8C 0 CODE 0 text2 dist/default/production\PID.X.production.obj
+__pmaintext 27A8 0 CODE 0 maintext dist/default/production\PID.X.production.obj
+__end_of_PID_init 3C4E 0 CODE 0 text12 dist/default/production\PID.X.production.obj
 UART_Write_Text@text 74 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
@@ -819,15 +827,15 @@ __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 displayNumber@num 29 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __size_of_UART_Write_Text 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-stackhi 0 0 ABS 0 - C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
-stacklo 0 0 ABS 0 - C:\Users\LARI_3\AppData\Local\Temp\sa8s.obj
+stackhi 0 0 ABS 0 - C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
+stacklo 0 0 ABS 0 - C:\Users\LARI_3\AppData\Local\Temp\s4as.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-main@D1 C1 0 BANK1 1 cstackBANK1 dist/default/production\PID.X.production.obj
-main@D2 190 0 BANK3 1 cstackBANK3 dist/default/production\PID.X.production.obj
-main@D3 1AC 0 BANK3 1 cstackBANK3 dist/default/production\PID.X.production.obj
+main@D1 A2 0 BANK1 1 cstackBANK1 dist/default/production\PID.X.production.obj
+main@D2 BE 0 BANK1 1 cstackBANK1 dist/default/production\PID.X.production.obj
+main@D3 190 0 BANK3 1 cstackBANK3 dist/default/production\PID.X.production.obj
 ___ftmul@cntr 2E 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___ftmul@sign 2F 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
@@ -845,24 +853,24 @@ ___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.produ
 ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ?___ftadd 30 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ?___ftmul 20 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
-?___fttol 3D 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+?___fttol 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 ?___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Hreset_vec 0 0 CODE 0 reset_vec -
-__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
 ___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
-__end_of_UART_Init 2276 0 CODE 0 text10 dist/default/production\PID.X.production.obj
+__end_of_UART_Init 4000 0 CODE 0 text10 dist/default/production\PID.X.production.obj
 __size_of_UART_Init 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__ptext1 20B6 0 CODE 0 text1 dist/default/production\PID.X.production.obj
-__ptext2 E 0 CODE 0 text2 dist/default/production\PID.X.production.obj
-__ptext3 3E1A 0 CODE 0 text3 dist/default/production\PID.X.production.obj
-__ptext4 1020 0 CODE 0 text4 dist/default/production\PID.X.production.obj
-__ptext5 110A 0 CODE 0 text5 dist/default/production\PID.X.production.obj
-__ptext6 3E92 0 CODE 0 text6 dist/default/production\PID.X.production.obj
-__ptext7 2004 0 CODE 0 text7 dist/default/production\PID.X.production.obj
-__ptext8 3D9A 0 CODE 0 text8 dist/default/production\PID.X.production.obj
-__ptext9 100C 0 CODE 0 text9 dist/default/production\PID.X.production.obj
-PID@error 54 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+__ptext1 3E40 0 CODE 0 text1 dist/default/production\PID.X.production.obj
+__ptext2 3C8C 0 CODE 0 text2 dist/default/production\PID.X.production.obj
+__ptext3 3CF0 0 CODE 0 text3 dist/default/production\PID.X.production.obj
+__ptext4 20B2 0 CODE 0 text4 dist/default/production\PID.X.production.obj
+__ptext5 2DDC 0 CODE 0 text5 dist/default/production\PID.X.production.obj
+__ptext6 201C 0 CODE 0 text6 dist/default/production\PID.X.production.obj
+__ptext7 1016 0 CODE 0 text7 dist/default/production\PID.X.production.obj
+__ptext8 3C4E 0 CODE 0 text8 dist/default/production\PID.X.production.obj
+__ptext9 12 0 CODE 0 text9 dist/default/production\PID.X.production.obj
+PID@error 47 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __size_of_displayNumber 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___aldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 LCD_mapping@D1 74 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
@@ -872,26 +880,27 @@ __Lpowerup 0 0 CODE 0 powerup -
 UART_Write@data 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_UART_Init 218E 0 CODE 0 text10 dist/default/production\PID.X.production.obj
+_pid_val DA 0 BANK1 1 bssBANK1 dist/default/production\PID.X.production.obj
+_UART_Init 3F18 0 CODE 0 text10 dist/default/production\PID.X.production.obj
 ___ftmul@exp 2A 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\PID.X.production.obj
 ___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
-main@timer1 5C 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+main@timer1 A0 0 BANK1 1 cstackBANK1 dist/default/production\PID.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext -
-__end_of_displayNumber 110A 0 CODE 0 text4 dist/default/production\PID.X.production.obj
+__end_of_displayNumber 219C 0 CODE 0 text4 dist/default/production\PID.X.production.obj
 __end_of_LCD_mapping 2000 0 CODE 0 text19 dist/default/production\PID.X.production.obj
 ___ftpack@sign 74 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __Hend_init 6 0 CODE 0 end_init -
-_PID$656 51 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+_PID$658 44 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 ___aldiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 displayDigit@D1 7B 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
-PID@read 4D 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
-__end_of_main 2BCC 0 CODE 0 maintext dist/default/production\PID.X.production.obj
-__end_of_utoa 218E 0 CODE 0 text1 dist/default/production\PID.X.production.obj
+PID@read 3F 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+__end_of_main 29A8 0 CODE 0 maintext dist/default/production\PID.X.production.obj
+__end_of_utoa 3F18 0 CODE 0 text1 dist/default/production\PID.X.production.obj
 _ANSEL 91 0 ABS 0 - dist/default/production\PID.X.production.obj
-main@setpoint 5A 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+main@setpoint 6E 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 _LCDPS 108 0 ABS 0 - dist/default/production\PID.X.production.obj
 _PORTD 8 0 ABS 0 - dist/default/production\PID.X.production.obj
 _RCREG 1A 0 ABS 0 - dist/default/production\PID.X.production.obj
@@ -908,11 +917,11 @@ __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 _CCP2CON 1D 0 ABS 0 - dist/default/production\PID.X.production.obj
-___fttol@sign1 45 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
+___fttol@sign1 78 0 COMMON 1 cstackCOMMON dist/default/production\PID.X.production.obj
 __size_of_PID 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__initialization FE8 0 CODE 0 cinit dist/default/production\PID.X.production.obj
+__initialization FDE 0 CODE 0 cinit dist/default/production\PID.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\PID.X.production.obj
-__pbssBANK0 67 0 BANK0 1 bssBANK0 dist/default/production\PID.X.production.obj
+__pbssBANK1 DA 0 BANK1 1 bssBANK1 dist/default/production\PID.X.production.obj
 __size_of_LCD_init 0 0 ABS 0 - dist/default/production\PID.X.production.obj
 ___ftmul@f3_as_product 2B 0 BANK0 1 cstackBANK0 dist/default/production\PID.X.production.obj
 # %SPLITSTAB Section
@@ -948,39 +957,39 @@ text5_split_7 text5_split_8
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7F4 FE8 C 2
-text1 0 105B 20B6 6C 2
-text2 0 7 E 32 2
-text3 0 1F0D 3E1A 3C 2
-text4 0 810 1020 75 2
-text5 0 885 110A 112 2
-text6 0 1F49 3E92 4B 2
-text7 0 1002 2004 59 2
-text8 0 1ECD 3D9A 1F 2
-text9 0 806 100C A 2
-text10 0 10C7 218E 74 2
-text11 0 12E1 25C2 8F 2
-text12 0 1EB2 3D64 1B 2
-text13 0 1370 26E0 B9 2
-text14 0 1253 24A6 8E 2
-text15 0 1429 2852 D3 2
-text16 0 15E6 2BCC 109 2
-text17 0 1EEC 3DD8 21 2
-text18 0 1F94 3F28 6C 2
+cinit 0 7EF FDE 11 2
+text1 0 1F20 3E40 6C 2
+text2 0 1E46 3C8C 32 2
+text3 0 1E78 3CF0 3C 2
+text4 0 1059 20B2 75 2
+text5 0 16EE 2DDC 112 2
+text6 0 100E 201C 4B 2
+text7 0 80B 1016 59 2
+text8 0 1E27 3C4E 1F 2
+text9 0 9 12 A 2
+text10 0 1F8C 3F18 74 2
+text11 0 1272 24E4 8F 2
+text12 0 1E0C 3C18 1B 2
+text13 0 BDD 17BA 133 2
+text14 0 1159 22B2 8C 2
+text15 0 1301 2602 D3 2
+text16 0 14D4 29A8 109 2
+text17 0 13 26 21 2
+text18 0 1EB4 3D68 6C 2
 text19 0 E46 1C8C 1BA 2
-text20 0 1E99 3D32 19 2
-maintext 0 14FC 29F8 EA 2
+text20 0 1DF3 3BE6 19 2
+maintext 0 13D4 27A8 100 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 4D 1
-cstackBANK1 1 A0 A0 3D 1
-cstackBANK3 1 190 190 38 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 4E 1
+cstackBANK3 1 190 190 1C 1
 text5_split_1 0 D10 1A20 136 2
-text5_split_2 0 11C6 238C 8D 2
-text5_split_3 0 16EF 2DDE 111 2
-text5_split_4 0 BDE 17BC 132 2
-text5_split_5 0 113B 2276 8B 2
-text5_split_6 0 997 132E 115 2
-text5_split_7 0 AAC 1558 132 2
-text5_split_8 0 39 72 7BB 2
+text5_split_2 0 11E5 23CA 8D 2
+text5_split_3 0 15DD 2BBA 111 2
+text5_split_4 0 AAB 1556 132 2
+text5_split_5 0 10CE 219C 8B 2
+text5_split_6 0 864 10C8 115 2
+text5_split_7 0 979 12F2 132 2
+text5_split_8 0 34 68 7BB 2
 reset_vec 0 0 0 3 2
 config 0 2007 400E 1 2

@@ -37,11 +37,11 @@
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
 "83
 [v _displayDigit displayDigit `(v  1 e 1 0 ]
-"31 C:\Users\LARI_3\Documents\PID.X\main.c
+"32 C:\Users\LARI_3\Documents\PID.X\main.c
 [v _PID_init PID_init `(v  1 e 1 0 ]
-"44
+"45
 [v _PID PID `(i  1 e 2 0 ]
-"57
+"61
 [v _main main `(v  1 e 1 0 ]
 "7 C:\Users\LARI_3\Documents\PID.X\uart.c
 [v _UART_Init UART_Init `(uc  1 e 1 0 ]
@@ -159,25 +159,28 @@
 [v _ki ki `f  1 e 3 0 ]
 [v _kd kd `f  1 e 3 0 ]
 [v _kp kp `f  1 e 3 0 ]
+[v _pid_val pid_val `f  1 e 3 0 ]
 "29
+[v _last_error last_error `i  1 e 2 0 ]
+"30
 [v _P P `i  1 e 2 0 ]
 [v _I I `i  1 e 2 0 ]
 [v _D D `i  1 e 2 0 ]
-"57
+"61
 [v _main main `(v  1 e 1 0 ]
 {
-"65
-[v main@str str `[33]uc  1 a 33 0 ]
-[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-"58
-[v main@D3 D3 `S19  1 a 28 28 ]
-[v main@D2 D2 `S19  1 a 28 0 ]
-[v main@D1 D1 `S19  1 a 28 33 ]
+"69
+[v main@str str `[33]uc  1 a 33 45 ]
+[s S20 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
 "62
-[v main@timer1 timer1 `ui  1 a 2 60 ]
-"61
-[v main@setpoint setpoint `i  1 a 2 58 ]
-"120
+[v main@D3 D3 `S20  1 a 28 0 ]
+[v main@D2 D2 `S20  1 a 28 30 ]
+[v main@D1 D1 `S20  1 a 28 2 ]
+"66
+[v main@timer1 timer1 `ui  1 a 2 0 ]
+"65
+[v main@setpoint setpoint `i  1 a 2 78 ]
+"124
 } 0
 "17 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\itoa.c
 [v _utoa utoa `(*.4uc  1 e 1 0 ]
@@ -221,18 +224,18 @@
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
 {
 [v displayNumber@num num `i  1 p 2 9 ]
-[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-[v displayNumber@D1 D1 `*.4S19  1 p 1 11 ]
-[v displayNumber@D2 D2 `*.5S19  1 p 1 12 ]
-[v displayNumber@D3 D3 `*.5S19  1 p 1 13 ]
+[s S20 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+[v displayNumber@D1 D1 `*.4S20  1 p 1 11 ]
+[v displayNumber@D2 D2 `*.4S20  1 p 1 12 ]
+[v displayNumber@D3 D3 `*.5S20  1 p 1 13 ]
 "80
 } 0
 "83
 [v _displayDigit displayDigit `(v  1 e 1 0 ]
 {
 [v displayDigit@digito digito `i  1 p 2 9 ]
-[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-[v displayDigit@D1 D1 `*.39S19  1 p 2 11 ]
+[s S20 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+[v displayDigit@D1 D1 `*.39S20  1 p 2 11 ]
 "185
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awmod.c
@@ -301,31 +304,31 @@
 [v ___aldiv@dividend dividend `l  1 p 4 4 ]
 "42
 } 0
-"31 C:\Users\LARI_3\Documents\PID.X\main.c
+"32 C:\Users\LARI_3\Documents\PID.X\main.c
 [v _PID_init PID_init `(v  1 e 1 0 ]
 {
-"42
+"43
 } 0
-"44
+"45
 [v _PID PID `(i  1 e 2 0 ]
 {
+"46
+[v PID@error error `i  1 a 2 39 ]
 "45
-[v PID@error error `i  1 a 2 52 ]
-"44
-[v PID@setpoint setpoint `i  1 p 2 43 ]
-[v PID@read read `i  1 p 2 45 ]
-"55
+[v PID@setpoint setpoint `i  1 p 2 29 ]
+[v PID@read read `i  1 p 2 31 ]
+"59
 } 0
 "44 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
 {
 "47
-[v ___fttol@lval lval `ul  1 a 4 38 ]
+[v ___fttol@lval lval `ul  1 a 4 9 ]
 "46
-[v ___fttol@exp1 exp1 `uc  1 a 1 42 ]
-[v ___fttol@sign1 sign1 `uc  1 a 1 37 ]
+[v ___fttol@exp1 exp1 `uc  1 a 1 13 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 8 ]
 "44
-[v ___fttol@f1 f1 `f  1 p 3 29 ]
+[v ___fttol@f1 f1 `f  1 p 3 0 ]
 "73
 } 0
 "62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
@@ -374,14 +377,14 @@
 "9 C:\Users\LARI_3\Documents\PID.X\lcd.c
 [v _LCD_mapping LCD_mapping `(v  1 e 1 0 ]
 {
-[s S19 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
-[v LCD_mapping@D1 D1 `*.4S19  1 a 1 wreg ]
-[v LCD_mapping@D1 D1 `*.4S19  1 a 1 wreg ]
-[v LCD_mapping@D2 D2 `*.5S19  1 p 1 0 ]
-[v LCD_mapping@D3 D3 `*.5S19  1 p 1 1 ]
+[s S20 . 28 `*.39i 1 sa 2 0 `*.39i 1 sb 2 2 `*.39i 1 sc 2 4 `*.39i 1 sd 2 6 `*.39i 1 se 2 8 `*.39i 1 sf 2 10 `*.39i 1 sg 2 12 `[7]i 1 bits 14 14 ]
+[v LCD_mapping@D1 D1 `*.4S20  1 a 1 wreg ]
+[v LCD_mapping@D1 D1 `*.4S20  1 a 1 wreg ]
+[v LCD_mapping@D2 D2 `*.4S20  1 p 1 0 ]
+[v LCD_mapping@D3 D3 `*.5S20  1 p 1 1 ]
 "11
 "9
-[v LCD_mapping@D1 D1 `*.4S19  1 a 1 4 ]
+[v LCD_mapping@D1 D1 `*.4S20  1 a 1 4 ]
 "36
 } 0
 "38
