@@ -37,7 +37,7 @@ void PID_init() {
     D = 0;
     
     // Empirical values for Kp, Ki & Kd;
-    kp = 1.5;
+    kp = 2;
     ki = 0.5;
     kd = 0.1;
 }

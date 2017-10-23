@@ -2442,9 +2442,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 37: D = 0;
 "37
 [e = _D -> 0 `i ]
-[; ;main.c: 40: kp = 1.5;
+[; ;main.c: 40: kp = 2;
 "40
-[e = _kp -> .1.5 `f ]
+[e = _kp -> -> 2 `i `f ]
 [; ;main.c: 41: ki = 0.5;
 "41
 [e = _ki -> .0.5 `f ]
